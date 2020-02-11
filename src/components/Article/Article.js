@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Article.css';
 
 const Article = ({ title, text, date }) => (
   <div className="article">
