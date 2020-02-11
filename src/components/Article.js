@@ -14,9 +14,9 @@ function Article(props) {
 }
 
 Article.propTypes = {
-  title: PropTypes.arrayOf(PropTypes.string).isRequired,
-  date: PropTypes.arrayOf(PropTypes.string).isRequired,
-  text: PropTypes.arrayOf(PropTypes.string).isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Article;
