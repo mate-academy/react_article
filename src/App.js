@@ -1,4 +1,5 @@
 import React from 'react';
+import Article from './components/Article';
 
 // eslint-disable-next-line no-unused-vars
 const article = {
@@ -8,8 +9,15 @@ const article = {
   date: 'August 30, 2019',
 };
 
-const App = () => (
-  <h1>React Article</h1>
-);
+const App = () => {
+  const { title, text, date } = article;
+
+  return (
+    <>
+      <h1>React Article</h1>
+      <Article title={title} text={text} date={date} />
+    </>
+  );
+};
 
 export default App;
