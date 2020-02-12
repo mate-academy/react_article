@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import s from './Article.module.css';
+import style from './Article.module.css';
 
-function Article(props) {
-  const { title, text, date } = props;
-
+function Article({ title, text, date }) {
   return (
-    <article className={s.article}>
-      <h1 className={s.title}>{title}</h1>
+    <article className={style.article}>
+      <h1 className={style.title}>{title}</h1>
       <p>{text}</p>
-      <span className={s.date}>{date}</span>
+      <span className={style.date}>{date}</span>
     </article>
   );
 }
