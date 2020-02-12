@@ -1,5 +1,5 @@
 # React article
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://Arimazz.github.io/react_article/)
+- Replace `<your_account>` with your Github username in the [DEMO LINK](https://arimazz.github.io/react_article/)
 - Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
 
 ## Task
