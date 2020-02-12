@@ -16,3 +16,5 @@ Article.propTypes = {
   text: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
 };
+
+export default Article;
