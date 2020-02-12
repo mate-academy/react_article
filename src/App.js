@@ -1,4 +1,5 @@
 import React from 'react';
+// import PropTypes from 'prop-types';
 import Article from './components/Article';
 import './App.css';
 
@@ -10,12 +11,16 @@ const article = {
   date: 'August 30, 2019',
 };
 
-const App = () => (
-  <Article
-    title={article.title}
-    text={article.text}
-    date={article.date}
-  />
-);
+const App = () => {
+  const { title, text, date } = article;
+
+  return (
+    <Article
+      title={title}
+      text={text}
+      date={date}
+    />
+  );
+};
 
 export default App;

@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Article(props) {
-  const { title, text, date } = props;
-
+function Article({ title, text, date }) {
   return (
     <>
       <h1>{title}</h1>
