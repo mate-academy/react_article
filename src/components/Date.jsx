@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Date(props) {
+  const { date } = props;
+
   return (
-    <span>{props.date}</span>
+    <span>{date}</span>
   );
 }
 
