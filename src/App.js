@@ -9,7 +9,7 @@ const article = {
 };
 
 const App = () => (
-  <h1>React Article Roma developer</h1>
+  <h1>React Article Roma devel</h1>
 );
 
 export default App;
