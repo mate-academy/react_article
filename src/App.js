@@ -9,7 +9,17 @@ const article = {
 };
 
 const App = () => (
-  <h1>React Article</h1>
+  <div>
+    <Article obj={article} />
+  </div>
+);
+
+const Article = props => (
+  <div>
+    <h1>{props.obj.title}</h1>
+    <date>{props.obj.date}</date>
+    <p>{props.obj.text}</p>
+  </div>
 );
 
 export default App;
