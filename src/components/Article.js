@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 function Article({ title, date, text }) {
   return (
     <div>
@@ -10,5 +10,11 @@ function Article({ title, date, text }) {
     </div>
   );
 }
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+};
 
 export default Article;
