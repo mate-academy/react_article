@@ -10,7 +10,9 @@ const article = {
 };
 
 const App = () => (
-  <div>{Article(...Object.values(article))}</div>
+  <>
+    <Article title={article.title} text={article.text} date={article.date} />
+  </>
 );
 
 export default App;
