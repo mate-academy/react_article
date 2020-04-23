@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-function Article(props) {
+function Article({ title, text, date }) {
   return (
     <article>
       <h1>
-        {props.article.title}
+        {title}
       </h1>
       <span>
-        {props.article.date}
+        {date}
       </span>
       <p>
-        {props.article.text}
+        {text}
       </p>
     </article>
   );
