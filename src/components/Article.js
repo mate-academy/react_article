@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Article(obj) {
+// eslint-disable-next-line react/prop-types
+function Article({ title, date, text }) {
   return (
     <div>
-      <h1>{obj.title}</h1>
-      <span>{obj.date}</span>
-      <p>{obj.text}</p>
+      <h1>{title}</h1>
+      <span>{date}</span>
+      <p>{text}</p>
     </div>
   );
 }
