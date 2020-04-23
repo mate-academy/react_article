@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Article = ({ info }) => (
+export const Article = ({ title, text, date }) => (
   <div>
-    <h1>{info.title}</h1>
-    <span>{info.date}</span>
-    <p>{info.text}</p>
+    <h1>{title}</h1>
+    <span>{date}</span>
+    <p>{text}</p>
   </div>
 );
 
 Article.propTypes = {
-  info: PropTypes.shape({
-    title: PropTypes.string,
-    date: PropTypes.string,
-    text: PropTypes.string,
-  }).isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
