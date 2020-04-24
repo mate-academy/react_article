@@ -10,9 +10,7 @@ const article = {
 
 const App = () => (
   <Article
-    article={article.title}
-    text={article.text}
-    date={article.date}
+    {...article}
   />
 );
 
