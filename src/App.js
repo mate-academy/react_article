@@ -11,7 +11,11 @@ const article = {
 
 const App = () => (
   <>
-    <Article props={article} />
+    <Article
+      title={article.title}
+      text={article.text}
+      date={article.date}
+    />
   </>
 );
 
