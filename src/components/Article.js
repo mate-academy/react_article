@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Article = (props) => {
-  const { title } = props.article;
-  const { date } = props.article;
-  const { text } = props.article;
+  const { title, date, text } = props.article;
 
   return (
     <>
