@@ -1,5 +1,5 @@
 # React article
-- DEMO LINK](https://coroboX.github.io/react_article/)
+- [DEMO LINK](https://coroboX.github.io/react_article/)
 
 - Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
 
