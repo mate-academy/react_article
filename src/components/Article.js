@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Article = ({ title, date, text }) => (
+export const Article = ({ title, date, text }) => (
   <article>
     <h1>
       {title}
@@ -20,5 +20,3 @@ Article.propTypes = {
   date: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
-
-export { Article };
