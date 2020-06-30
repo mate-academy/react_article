@@ -1,4 +1,7 @@
 import React from 'react';
+import './App.css';
+import PropTypes from 'prop-types';
+import Article from './components/Article';
 
 // eslint-disable-next-line no-unused-vars
 const article = {
@@ -9,7 +12,17 @@ const article = {
 };
 
 const App = () => (
-  <h1>React Article</h1>
+  <Article
+    title={article.title}
+    date={article.date}
+    text={article.text}
+  />
 );
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 export default App;
