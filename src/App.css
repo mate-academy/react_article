@@ -1,0 +1,11 @@
+.container {
+  margin: 50px auto;
+  padding: 20px;
+  background-color: lightslategray;
+  width: 500px;
+  border-block: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
