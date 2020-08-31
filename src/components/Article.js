@@ -10,8 +10,8 @@ const Article = ({ title, date, text }) => (
 );
 
 Article.propTypes = {
-  title: PropTypes.number.isRequired,
-  date: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 
