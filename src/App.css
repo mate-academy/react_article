@@ -1,0 +1,12 @@
+.title {
+  color: brown;
+}
+
+.date {
+  color: grey;
+}
+
+.text {
+  width: 900px;
+  line-height: 1.5;
+}
