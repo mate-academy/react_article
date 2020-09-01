@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Article(props) {
+function Article({ title, date, text }) {
   return (
     <>
-      <h1>{props.content.title}</h1>
-      <span>{props.content.date}</span>
-      <p>{props.content.text}</p>
+      <h1>{title}</h1>
+      <span>{date}</span>
+      <p>{text}</p>
     </>
   );
 }
