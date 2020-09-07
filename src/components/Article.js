@@ -7,7 +7,7 @@ const Article = ({
   date,
 }) => (
   <Fragment>
-    <h1>{title}</h1>
+    <h2>{title}</h2>
     <span>{text}</span>
     <p>{date}</p>
   </Fragment>
