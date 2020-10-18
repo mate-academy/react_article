@@ -1,1 +1,39 @@
-// style go here
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans Unicode", sans-serif;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+.article {
+  padding: 20px 20px 20px 15vw;
+
+  &__title {
+    margin-bottom: 30px;
+    max-width: 70vw;
+
+    font-size: 32px;
+  }
+
+  &__date {
+    color: #404040;
+  }
+
+  &__text {
+    max-width: 70vw;
+    margin-bottom: 30px;
+    padding-top: 15px;
+
+    font-size: 17px;
+    border-top: 2px solid #1f1f7a;
+  }
+}
