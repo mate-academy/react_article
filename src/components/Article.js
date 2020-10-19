@@ -1,11 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Article = ({ title, text, date }) => (
-  <div>
-    <h1>{ title }</h1>
-    <span>{ date }</span>
-    <p>{ text }</p>
+  <div className="card">
+    <div className="card-body mx-auto w-75 p-3">
+      <h1 className="card-title">{ title }</h1>
+
+      <span className="card-subtitle mb-3 text-muted">
+        { date }
+      </span>
+
+      <p className="card-text">{ text }</p>
+    </div>
   </div>
 );
 
