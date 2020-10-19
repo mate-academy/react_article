@@ -1,4 +1,9 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Badge from 'react-bootstrap/Badge';
+import Article from './components/Article/Article';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // eslint-disable-next-line no-unused-vars
 const article = {
@@ -9,7 +14,12 @@ const article = {
 };
 
 const App = () => (
-  <h1>React Article</h1>
+  <Container>
+    <h1>
+      <Badge variant="secondary">React article</Badge>
+    </h1>
+    <Article {...article} />
+  </Container>
 );
 
 export default App;
