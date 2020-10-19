@@ -1,6 +1,5 @@
 # React article
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://AlinaMatuschak.github.io/react_article/)
-- Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
+- [DEMO LINK](https://AlinaMatuschak.github.io/react_article/)
 
 ## Task
 Implement `Article` component which accept next props:
