@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Article = ({ title, text, date }) => (
-  <>
+  <section>
     <h1>{title}</h1>
-    <span>{text}</span>
-    <p>{date}</p>
-  </>
+    <span>{date}</span>
+    <p>{text}</p>
+  </section>
 );
 
 Article.propTypes = {
