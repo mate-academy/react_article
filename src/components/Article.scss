@@ -1,0 +1,11 @@
+.article {
+  padding: 50px;
+
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+  text-align: justify;
+
+  &__header {
+    font-size: 30px;
+    color: rgb(255, 94, 0);
+  }
+}
