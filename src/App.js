@@ -11,7 +11,6 @@ const article = {
 
 const App = () => (
   <section>
-    <h1>React Article</h1>
     <Article {...article} />
   </section>
 );
