@@ -7,13 +7,13 @@ export const Article = ({ title, text, date }) => (
       {title}
     </h1>
 
-    <p className="article__text">
-      {text}
-    </p>
-
     <span className="article__date">
       {date}
     </span>
+
+    <p className="article__text">
+      {text}
+    </p>
   </article>
 );
 
