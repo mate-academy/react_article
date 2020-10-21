@@ -11,9 +11,8 @@ const article = {
 
 const App = () => (
   <div>
-    <Article title={article.title} />
-    <Article date={article.date} />
-    <Article text={article.text} />
+    <Article {...article} />
+
   </div>
 
 );
