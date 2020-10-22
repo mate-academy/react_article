@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Article({ title, data, text }) {
+function Article({ title, date, text }) {
   return (
-    <div>
+    <article>
       <h1>{title}</h1>
-      <span>{data}</span>
+      <span>{date}</span>
       <p>{text}</p>
-    </div>
+    </article>
   );
 }
 
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  data: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 
