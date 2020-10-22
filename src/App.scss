@@ -1,1 +1,33 @@
-// style go here
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(236, 152, 152);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 850px;
+  margin: 100px auto;
+  padding: 50px;
+
+  background-color: rgb(250, 245, 245);
+  border-radius: 80px;
+  box-shadow: 0 0 15px rgba(75, 74, 74, 0.3);
+}
+
+h1 {
+  color: rgb(236, 136, 136);
+}
+
+span {
+  color: grey;
+}
+
+p {
+  color: rgb(75, 74, 74);
+}
