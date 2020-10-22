@@ -1,14 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Article.css';
 
-function Article({
-  title,
-  date,
-  text,
-}) {
+function Article({ title, date, text }) {
   return (
     <div>
-      <h1>{ title }</h1>
+      <h1 className="header">{ title }</h1>
       <span>{ date }</span>
       <p>{ text }</p>
     </div>
