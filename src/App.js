@@ -9,14 +9,8 @@ const article = {
   date: 'August 30, 2019',
 };
 
-const { title, date, text } = article;
-
 const App = () => (
-  <Article
-    title={title}
-    date={date}
-    text={text}
-  />
+  <Article {...article} />
 );
 
 export default App;
