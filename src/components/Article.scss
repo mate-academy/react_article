@@ -1,0 +1,22 @@
+.title {
+  font-style: italic;
+  color: orangered;
+}
+
+.date {
+  margin-left: 15px;
+
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.text {
+  border: solid black 2px;
+  border-radius: 8px;
+  margin-left: 20px;
+
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+}
