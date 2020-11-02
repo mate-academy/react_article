@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Article = ({ article: { title, text, date } }) => (
+const Article = ({ title, text, date }) => (
   <article>
     <h1>{title}</h1>
     <span>{date}</span>
@@ -10,15 +10,15 @@ const Article = ({ article: { title, text, date } }) => (
 );
 
 Article.defaultProps = {
-  article: {},
+  title: 'title',
+  text: 'text',
+  date: 'date',
 };
 
 Article.propTypes = {
-  article: PropTypes.shape({
-    title: PropTypes.string,
-    text: PropTypes.string,
-    date: PropTypes.string,
-  }),
+  title: PropTypes.string,
+  text: PropTypes.string,
+  date: PropTypes.string,
 };
 
 export default Article;
