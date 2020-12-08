@@ -9,16 +9,12 @@ const Article = ({ article }) => (
   </>
 );
 
-Article.defaultProps = {
-  article: 'The topic is not found',
-};
-
 Article.propTypes = {
   article: PropTypes.shape({
     title: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
 };
 
 export default Article;
