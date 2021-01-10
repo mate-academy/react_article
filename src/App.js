@@ -13,8 +13,6 @@ const { title, text, date } = article;
 
 const App = () => (
   <div>
-    <h1>React Article</h1>
-
     <Article
       title={title}
       date={date}
