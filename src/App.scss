@@ -1,1 +1,23 @@
 // style go here
+.main {
+  margin: 50px auto;
+  max-width: 680px;
+}
+
+.title {
+  padding-left: 20px;
+}
+
+.article {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: #f4f2e4;
+  box-shadow: 2px 2px black;
+
+  &__date {
+    font-style: italic;
+  }
+}
+
+
