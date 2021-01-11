@@ -1,0 +1,15 @@
+.article {
+  height: 100vh;
+  padding: 30px;
+  background: beige;
+  &__title {
+    color: rgb(65, 28, 6);
+  }
+  &__date {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+  }
+  &__itself {
+    text-indent: 2em;
+  }
+}
