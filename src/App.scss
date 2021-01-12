@@ -1,1 +1,26 @@
-// style go here
+
+.article {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+
+  background-color: whitesmoke;
+  border-radius: 10px;
+
+  &__title {
+    margin: 0;
+    font-size: 36;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 20;
+    line-height: 17px;
+    text-align: justify;
+  }
+
+  &__data {
+    font-size: 14;
+    font-style: italic;
+  }
+}
