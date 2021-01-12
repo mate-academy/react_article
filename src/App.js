@@ -14,9 +14,7 @@ const article = {
 const App = () => (
   <main className="app">
     <Article
-      title={article.title}
-      text={article.text}
-      date={article.date}
+      {...article}
     />
   </main>
 );
