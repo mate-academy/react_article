@@ -1,5 +1,5 @@
 
-article {
+.article {
   max-width: 900px;
   margin: auto;
   padding: 10px;
@@ -8,19 +8,19 @@ article {
   border-radius: 10px;
 }
 
-h1 {
+.h1 {
   margin: 0;
   font-size: 36;
   text-align: center;
 }
 
-p {
+.p {
   font-size: 20;
   line-height: 17px;
   text-align: justify;
 }
 
-span {
+.span {
   font-size: 14;
   font-style: italic;
 }
