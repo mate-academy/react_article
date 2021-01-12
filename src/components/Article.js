@@ -6,10 +6,10 @@ const Article = ({
   text,
   date,
 }) => (
-  <article>
-    <h1>{title}</h1>
-    <p>{text}</p>
-    <span>{date}</span>
+  <article className="article">
+    <h1 className="article__title">{title}</h1>
+    <p className="article__text">{text}</p>
+    <span className="article__data">{date}</span>
   </article>
 );
 
