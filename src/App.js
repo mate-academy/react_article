@@ -11,7 +11,6 @@ const article = {
 
 const App = () => (
   <main>
-    <h1>React Article</h1>
     <Article
       title={article.title}
       text={article.text}
