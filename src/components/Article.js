@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Article(props) {
+function Article({ title, date, text }) {
   return (
     <div>
-      <h1>{props.title}</h1>
-      <span>{props.date}</span>
-      <p>{props.text}</p>
+      <h1>{title}</h1>
+      <span>{date}</span>
+      <p>{text}</p>
     </div>
   );
 }
