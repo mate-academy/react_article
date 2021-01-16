@@ -1,1 +1,33 @@
-// style go here
+$bg_color: #4c8c8c;
+$title_color: #afeeee;
+$text_color: #f5fffa;
+
+.article {
+  padding: 15px;
+  background-color: $bg_color;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+
+  &-heading {
+    text-align: right;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    color: $title_color;
+    text-align: center;
+  }
+
+  &__date {
+    color: $text_color;
+    opacity: 0.75;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  &__description {
+    color: $text_color;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    text-indent: 1em;
+  }
+}
