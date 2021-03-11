@@ -13,7 +13,7 @@ const App = () => (
   <>
     <h1>React Article</h1>
     <Article
-      objectWithDataForArticle={article}
+      {...article}
     />
   </>
 );

@@ -1,31 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Article = ({ objectWithDataForArticle }) => (
+const Article = ({ title, date, text }) => (
   <>
     <h1>
-      { objectWithDataForArticle.title }
+      {title}
     </h1>
     <span>
-      {objectWithDataForArticle.date}
+      {date}
     </span>
     <p>
-      {objectWithDataForArticle.text}
+      {text}
     </p>
   </>
 );
 
 Article.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  objectWithDataForArticle: PropTypes.object,
+  title: PropTypes.string,
+  date: PropTypes.string,
+  text: PropTypes.string,
 };
 
 Article.defaultProps = {
-  objectWithDataForArticle: {
-    title: 'Title',
-    date: 'Date',
-    text: 'Text',
-  },
+  title: 'Title',
+  date: 'Date',
+  text: 'Text',
 };
 
 export default Article;
