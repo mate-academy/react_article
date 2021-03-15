@@ -14,7 +14,7 @@ function Article({ title, text, date }) {
 
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
   text: PropTypes.string.isRequired,
 };
 
