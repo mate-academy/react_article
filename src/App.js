@@ -9,7 +9,7 @@ const article = {
   date: 'August 30, 2019',
 };
 
-const App = (article) => (
+const App = () => (
   <>
   <h1>React Article</h1>
   <Article title={article.title} text ={article.text} date={article.date} />
