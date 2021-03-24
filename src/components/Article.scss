@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-family: Montserrat, sans-serif;
+
+  &__title {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  &__paragraph {
+    padding-top: 15px;
+  }
+}
