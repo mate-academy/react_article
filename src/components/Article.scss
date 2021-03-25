@@ -1,0 +1,17 @@
+.article {
+  padding: 0 15%;
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  &__date {
+    font-size: 20px;
+  }
+
+  &__description {
+    text-align: justify;
+    font-size: 18px;
+  }
+}
