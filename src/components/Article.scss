@@ -1,0 +1,18 @@
+.article {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__description {
+    line-height: 1.5em;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
