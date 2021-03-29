@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  font-family: sans-serif, Arial;
+  line-height: 1.6em;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__span {
+    display: inline-block;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+}
