@@ -1,0 +1,22 @@
+.article {
+  width: 1100px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    display: inline-block;
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 10px;
+  }
+
+  &__text {
+    font-size: 25px;
+    text-align: justify;
+  }
+}
