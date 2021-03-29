@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Article.scss';
 
 const Article = ({ title, text, date }) => (
-  <>
-    <h1>
+  <div className="article">
+    <h1 className="article__title">
       {title}
     </h1>
-    <span>
+    <span className="article__date">
       {date}
     </span>
-    <p>
+    <p className="article__paragraph">
       {text}
     </p>
-
-  </>
+  </div>
 );
 
 Article.propTypes = {

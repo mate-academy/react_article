@@ -1,0 +1,33 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  &__title {
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  &__date {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &__paragraph {
+    position: relative;
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 1.3em;
+
+    &::before {
+      position: absolute;
+      top: -10px;
+      left: calc(50% - 100px);
+      height: 2px;
+      width: 200px;
+      background-color: black;
+      content: "";
+    }
+  }
+}
