@@ -1,1 +1,40 @@
-// style go here
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: "Source Sans Pro", "Open Sans", Roboto, Arial, sans-serif;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.root {
+  box-shadow: 1px 10px 34px #b28542;
+  padding: 0 20px 20px;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 30px;
+    text-shadow: 6px 0 10px rgba(90, 156, 198, 0.77);
+  }
+
+  &__date {
+    color: rgb(119, 145, 59);
+  }
+
+  &__text {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
