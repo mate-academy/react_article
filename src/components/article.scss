@@ -1,0 +1,17 @@
+.block {
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(34, 184, 221);
+  }
+
+  &__date {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(216, 81, 19);
+  }
+
+  &__text {
+    color: rgb(0, 132, 255);
+  }
+}
