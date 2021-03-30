@@ -1,0 +1,19 @@
+.article {
+  padding: 0 35px;
+  color: saddlebrown;
+  border-bottom: 1px solid saddlebrown;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__date {
+    font-weight: 600;
+    font-style: italic;
+    border-bottom: 1px solid black;
+  }
+
+  &__text {
+    line-height: 2;
+  }
+}
