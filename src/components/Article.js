@@ -1,8 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Article.scss';
+import './article.scss';
 
-const Article = ({ title, text, date }) => (
+export const Article = ({
+  title,
+  text,
+  date,
+}) => (
   <div className="article">
     <h1 className="article__title">
       {title}
@@ -21,5 +25,3 @@ Article.propTypes = {
   date: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
-
-export default Article;
