@@ -1,1 +1,25 @@
-// style go here
+$color: rgb(197, 231, 197);
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: $color;
+}
+
+.title {
+  text-align: center;
+}
+
+.date {
+  font-weight: bold;
+  color: $color;
+  background-color: black;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.text {
+  line-height: 2em;
+}
