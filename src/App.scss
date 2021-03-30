@@ -8,11 +8,11 @@ body {
   background-color: $color;
 }
 
-h1 {
+.title {
   text-align: center;
 }
 
-span {
+.date {
   font-weight: bold;
   color: $color;
   background-color: black;
@@ -20,6 +20,6 @@ span {
   border-radius: 8px;
 }
 
-p {
+.text {
   line-height: 2em;
 }
