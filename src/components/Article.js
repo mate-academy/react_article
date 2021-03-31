@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Article = (prop) => {
-  const { title, date, text } = prop.article;
+const Article = (props) => {
+  const { title, date, text } = props.article;
 
   return (
     <>
@@ -10,6 +11,18 @@ const Article = (prop) => {
       <p>{text}</p>
     </>
   );
+};
+
+Article.propTypes = {
+  article: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+  }),
+};
+
+Article.defaultProps = {
+  article: {},
 };
 
 export default Article;
