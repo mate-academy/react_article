@@ -13,7 +13,7 @@ const article = {
 
 const App = () => (
   <>
-    <h1 className="article">React Article</h1>
+    <h1 className="title">React Article</h1>
     <Article
       title={article.title}
       text={article.text}
