@@ -1,4 +1,5 @@
 import React from 'react';
+import Article from './components/Article';
 
 // eslint-disable-next-line no-unused-vars
 const article = {
@@ -9,7 +10,10 @@ const article = {
 };
 
 const App = () => (
-  <h1>React Article</h1>
+  <div className="block">
+    <h1><i>React Article</i></h1>
+    <Article {...article} />
+  </div>
 );
 
 export default App;
