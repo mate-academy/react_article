@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const Article = ({
   title,
-  text,
   date,
+  text,
 }) => (
   <>
     <h1>
