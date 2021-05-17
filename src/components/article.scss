@@ -1,0 +1,24 @@
+.article {
+  max-width: 70%;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+  }
+
+  &__date {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  &__text {
+    text-align: justify;
+    &::first-letter {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+}
