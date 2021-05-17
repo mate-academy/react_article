@@ -1,1 +1,38 @@
-// style go here
+* {
+  box-sizing: border-box;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+  
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+
+    background-color: lightgray;
+    border-radius: 20px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__date {
+    font-weight: bold;
+  }
+}
