@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from './components/Article';
+import './App.scss';
 
 // eslint-disable-next-line no-unused-vars
 const article = {
@@ -16,6 +17,7 @@ const App = () => (
       title={article.title}
       date={article.date}
       text={article.text}
+      className="article"
     />
   </>
 );

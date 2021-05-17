@@ -1,6 +1,6 @@
 import React from 'react';
 import { string } from 'prop-types';
-import '../App.scss';
+import './Article.scss';
 
 Article.propTypes = {
   title: string.isRequired,
@@ -11,9 +11,9 @@ Article.propTypes = {
 function Article({ title, date, text }) {
   return (
     <>
-      <h1>{title}</h1>
-      <span>{date}</span>
-      <p>{text}</p>
+      <h1 className="article__title">{title}</h1>
+      <span className="article__date">{date}</span>
+      <p className="article__text">{text}</p>
     </>
   );
 }
