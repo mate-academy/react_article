@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import Article from './components/Article';
 
 // eslint-disable-next-line no-unused-vars
 const article = {
@@ -9,22 +9,12 @@ const article = {
   date: 'August 30, 2019',
 };
 
-const App = ({
-  title = article.title,
-  date = article.date,
-  text = article.text,
-}) => (
-  <section>
-    <h1>{title}</h1>
-    <p>{text}</p>
-    <time>{date}</time>
-  </section>
+const App = () => (
+  <Article
+    title={article.title}
+    date={article.date}
+    text={article.text}
+  />
 );
-
-App.propTypes = {
-  title: propTypes.string.isRequired,
-  date: propTypes.string.isRequired,
-  text: propTypes.string.isRequired,
-};
 
 export default App;
