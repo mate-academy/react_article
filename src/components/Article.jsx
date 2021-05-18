@@ -17,13 +17,13 @@ const Article = ({ title, date, text }) => (
 
 Article.defaultProps = {
   title: 'Title',
-  date: new Date().getFullYear(),
+  date: '(Without Date)',
   text: 'Text',
 };
 
 Article.propTypes = {
   title: PropTypes.string,
-  date: PropTypes.number,
+  date: PropTypes.string,
   text: PropTypes.string,
 };
 
