@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.scss';
 
-function Article(props) {
+function Article({ 
+  title,
+  date,
+  text
+}) {
   return (
     <>
-      <h1 className="title">{props.title}</h1>
-      <p className="text">{props.text}</p>
-      <span className="date">{props.date}</span>
+      <h1 className="title">{title}</h1>
+      <p className="text">{text}</p>
+      <span className="date">{date}</span>
     </>
   );
 }
