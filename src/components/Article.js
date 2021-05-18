@@ -10,7 +10,7 @@ const Article = ({ title, date, text }) => (
 );
 
 Article.defaultProps = {
-  date: new Date(),
+  date: new Date().toString(),
 };
 
 Article.propTypes = {
