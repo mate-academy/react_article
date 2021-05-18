@@ -1,0 +1,23 @@
+.article {
+  width: 70%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.article-date {
+  font-size: 25px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.article-text {
+  font-size: 20px;
+  width: 70%;
+  justify-self: center;
+}
