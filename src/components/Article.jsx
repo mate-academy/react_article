@@ -9,15 +9,9 @@ const Article = ({ title, date, text }) => (
   </>
 );
 
-Article.defaultProps = {
-  date: new Date().toString(),
-  text: 'Some text',
-};
-
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.string,
-  text: PropTypes.string,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
-
 export default Article;
