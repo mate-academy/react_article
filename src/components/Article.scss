@@ -1,0 +1,14 @@
+.article {
+  &__title {
+    color:rgb(19, 19, 83);
+  }
+
+  &__date {
+    color: grey;
+  }
+
+  &__text {
+    color: rgba(20, 20, 20, 1);
+    text-align: justify;
+  }
+}

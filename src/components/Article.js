@@ -2,12 +2,6 @@ import React from 'react';
 import { string } from 'prop-types';
 import './Article.scss';
 
-Article.propTypes = {
-  title: string.isRequired,
-  date: string.isRequired,
-  text: string.isRequired,
-};
-
 function Article({ title, date, text }) {
   return (
     <>
@@ -17,5 +11,11 @@ function Article({ title, date, text }) {
     </>
   );
 }
+
+Article.propTypes = {
+  title: string.isRequired,
+  date: string.isRequired,
+  text: string.isRequired,
+};
 
 export default Article;
