@@ -13,11 +13,7 @@ const App = () => (
   <>
     <h1>React Article</h1>
 
-    <Article
-      text={article.text}
-      date={article.date}
-      title={article.title}
-    />
+    <Article {...article} />
   </>
 );
 
