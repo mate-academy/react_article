@@ -1,0 +1,19 @@
+.article {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+
+  &__title {
+    color: red;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: larger;
+  }
+
+  &__date {
+    font-style: italic;
+    font-weight: bold;
+  }
+}
