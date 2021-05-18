@@ -11,7 +11,7 @@ const article = {
 
 const App = () => (
   <>
-    <Article article={article} />
+    <Article {...article} />
   </>
 );
 

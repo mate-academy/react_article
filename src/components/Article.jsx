@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Article = ({ article }) => (
-  <div>
-    <h1>{article.title}</h1>
-    <p>{article.text}</p>
-    <span>{article.date}</span>
-  </div>
-);
+function Article({ title, date, text }) {
+  return (
+    <>
+      <h1>{title}</h1>
+      <p>{text}</p>
+      <span>{date}</span>
+    </>
+  );
+}
 
 Article.propTypes = {
-  article: PropTypes.shape({
-    title: PropTypes.string,
-    text: PropTypes.string,
-    date: PropTypes.string,
-  }),
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Article;
