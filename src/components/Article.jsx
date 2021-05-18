@@ -9,10 +9,6 @@ const Article = ({ article }) => (
   </div>
 );
 
-Article.defaultProps = {
-  article: 'No article',
-};
-
 Article.propTypes = {
   article: PropTypes.shape({
     title: PropTypes.string,
