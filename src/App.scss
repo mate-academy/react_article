@@ -1,1 +1,13 @@
-// style go here
+/*#region variables*/
+$color-p: #ececec;
+/*#endregion variables*/
+
+body {
+  background-color: $color-p;
+}
+
+.app {
+  &-title {
+    text-align: center;
+  }
+}

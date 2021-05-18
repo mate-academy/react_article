@@ -1,0 +1,23 @@
+/*#region variables*/
+$fsz-p: 20px;
+$txt-indent-p: 20px;
+/*#endregion variables*/
+
+.article {
+  width: 60%;
+  margin: 0 auto;
+
+  &-title {
+    text-align: center;
+  }
+  
+  &-text {
+    font-size: $fsz-p;
+    text-indent: $txt-indent-p;
+    text-align: justify;
+  }
+  
+  &-date {
+    text-decoration: underline;
+  }
+}
