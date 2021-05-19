@@ -11,9 +11,7 @@ const article = {
 
 const App = () => (
   <div className="App">
-    <Article
-      {...article}
-    />
+    <Article {...article} />
   </div>
 );
 
