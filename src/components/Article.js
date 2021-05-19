@@ -9,7 +9,6 @@ const Article = ({ title, text, date }) => (
   </>
 );
 
-// Article.propTypes.object.objectOf.propTypes.string;
 Article.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
