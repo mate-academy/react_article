@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Article.scss';
 
-// eslint-disable-next-line react/prop-types
 const Article = ({ title, date, text }) => (
   <div className="Article">
     <h1 className="Article__title">{title}</h1>
