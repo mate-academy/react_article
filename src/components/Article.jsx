@@ -1,18 +1,11 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-const Article = ({
-  title,
-  date,
-  text,
-}) => (
+const Article = ({ title, date, text, }) => (
   <>
     <h1>{title}</h1>
-    <p>
-      {text}
-      {' '}
-      <span>{date}</span>
-    </p>
+    <span>{date}</span>
+    <p>{text}</p>
   </>
 );
 
