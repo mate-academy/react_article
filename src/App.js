@@ -12,7 +12,6 @@ const article = {
 
 const App = () => (
   <div className="app">
-    <h1>React Article</h1>
     <Article {...article} />
   </div>
 );

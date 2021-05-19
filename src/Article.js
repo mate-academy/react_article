@@ -3,15 +3,9 @@ import propTypes from 'prop-types';
 
 const Article = ({ title, text, date }) => (
   <div className="wrapper">
-    <h1>
-      {title}
-    </h1>
-    <p>
-      {text}
-    </p>
-    <span>
-      {date}
-    </span>
+    <h1 className="title">{title}</h1>
+    <p>{text}</p>
+    <span>{date}</span>
   </div>
 );
 
