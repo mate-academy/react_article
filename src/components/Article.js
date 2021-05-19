@@ -5,7 +5,7 @@ import './Article.scss';
 function Article({ title, text, date }) {
   return (
     <article className="article">
-      <h2 className="article-title">{title}</h2>
+      <h1 className="article-title">{title}</h1>
       <hr />
       <p className="article-text">{text}</p>
       <span className="article-date">
