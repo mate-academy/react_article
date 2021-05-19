@@ -7,18 +7,17 @@ const Article = ({
   date,
 }) => (
   <div className="block">
-    <div className="head">
-      <h1 className="title">
-        {title}
-      </h1>
-      <span className="date">
-        {date}
-      </span>
-    </div>
+    <h1 className="title">
+      {title}
+    </h1>
 
     <p className="paragraph">
       {text}
     </p>
+
+    <span className="date">
+      {date}
+    </span>
   </div>
 );
 

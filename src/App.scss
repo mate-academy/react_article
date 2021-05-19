@@ -11,21 +11,7 @@ body {
   flex-direction: column;
 }
 
-.head {
-  margin: 0;
-
-  position: sticky;
-  top: 0;
-
-  text-align: center;
-  border: 1px black solid;
-}
-
 .title {
+  text-align: center;
   text-decoration: underline;
-}
-
-.date {
-  margin-right: 52%;
-  border: .5px black solid;
 }
