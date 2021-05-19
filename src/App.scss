@@ -1,1 +1,17 @@
-// style go here
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+}
