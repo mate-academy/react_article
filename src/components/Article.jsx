@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Article = (props) => (
+const Article = ({ title, date, text }) => (
   <>
-    <h1>{props.title}</h1>
-    <span>{props.date}</span>
-    <p>{props.text}</p>
+    <h1>{title}</h1>
+    <span>{date}</span>
+    <p>{text}</p>
   </>
 );
 

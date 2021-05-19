@@ -14,7 +14,7 @@ const article = {
 const App = () => (
   <>
     <h2>React Article</h2>
-    <Article title={article.title} date={article.date} text={article.text} />
+    <Article {...article} />
   </>
 );
 
