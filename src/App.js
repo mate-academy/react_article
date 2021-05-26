@@ -12,7 +12,7 @@ const article = {
 const App = () => (
   <>
     <h1>React Article</h1>
-    <Article content={article} />
+    <Article {...article} />
   </>
 );
 
