@@ -21,8 +21,8 @@ const Article = ({
 
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.string,
+  date: PropTypes.string.isRequired,
   text: PropTypes.number.isRequired,
-}
+};
 
 export default Article;
