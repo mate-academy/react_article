@@ -1,1 +1,10 @@
-// style go here
+html {
+  font-family: Roboto, sans-serif;
+  background-color: #eee;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
