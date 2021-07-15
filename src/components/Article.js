@@ -4,13 +4,9 @@ import PropTypes from 'prop-types';
 function Article({ title, date, text }) {
   return (
     <article>
-      <h1>
-        {title}
-      </h1>
+      <h1>{title}</h1>
       <span>{date}</span>
-      <p>
-        {text}
-      </p>
+      <p>{text}</p>
     </article>
   );
 }
