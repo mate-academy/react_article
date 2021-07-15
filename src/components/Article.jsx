@@ -12,7 +12,7 @@ const Article = ({ date, title, text }) => (
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  text: PropTypes.number.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Article;
