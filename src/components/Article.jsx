@@ -7,15 +7,9 @@ const Article = ({
   text,
 }) => (
   <div>
-    <h1>
-      {title}
-    </h1>
-    <span>
-      {date}
-    </span>
-    <p>
-      {text}
-    </p>
+    <h1>{title}</h1>
+    <span>{date}</span>
+    <p>{text}</p>
   </div>
 );
 
