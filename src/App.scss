@@ -1,1 +1,35 @@
-// style go here
+.title {
+  display: block;
+  max-width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.143);
+  border-radius: 4px;
+  padding: 8px;
+  background-color: rgba(204, 137, 120, 0.843);
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.date {
+  display: block;
+  max-width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.143);
+  border-radius: 4px;
+  padding: 8px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  color: #fff;
+  background-color: grey;
+}
+
+.text {
+  display: block;
+  max-width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.143);
+  border-radius: 4px;
+  padding: 8px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(245, 245, 220, 0.347);
+  text-align: justify;
+}
