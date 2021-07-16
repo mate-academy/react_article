@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Article = function(props) {
-  const {title, date, text} = props;
-
+const Article = function({title, date, text} ) {
   return (
     <>
       <h1 className='title'>
@@ -21,7 +19,7 @@ const Article = function(props) {
 }
 
 Article.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   date: PropTypes.string,
   text: PropTypes.string,
 };
