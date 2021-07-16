@@ -1,0 +1,32 @@
+
+.article {
+  padding: 20px;
+  background-color: lightslategray;
+
+  &__title {
+    color: mintcream;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: color 1s;
+  }
+
+  &__title:hover {
+    color: black;
+  }
+
+
+
+  &__date {
+    text-decoration: mintcream 5px underline;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &__text::first-letter {
+  color: mintcream;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+}
