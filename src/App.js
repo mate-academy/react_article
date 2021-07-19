@@ -11,10 +11,11 @@ const article = {
 };
 
 const App = () => (
-  <>
-    <h1>React Article</h1>
-    <Article {...article} />
-  </>
+  <Article
+    title={article.title}
+    date={article.date}
+    text={article.text}
+  />
 );
 
 export default App;

@@ -7,7 +7,7 @@ const Article = ({
   date,
 }) => (
   <>
-    <h2>{title}</h2>
+    <h1>{title}</h1>
     <span>{date}</span>
     <p>{text}</p>
   </>
