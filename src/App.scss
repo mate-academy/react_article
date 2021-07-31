@@ -1,1 +1,36 @@
-// style go here
+body {
+  margin: 0;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: azure;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 100%;
+  background-color: white;
+  font-family: 'Times New Roman', Times, serif;
+
+  h1 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 0 10px 50px;
+    text-indent: 20px;
+  }
+
+  span {
+    position: absolute;
+    right: 10px;
+  }
+}
