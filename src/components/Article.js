@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Article = (props) (
-    <>
-        <h1>{props.title || null}</h1>
-        <p> {props.text.length < 120 ? props.text : null}</p>
-        <span>{props.date || null}</span>
-    </>
-
+const Article = ({ title, text, date }) (
+  <>
+    <h1>{title || null}</h1>
+    <p> {text.length < 120 ? text : null}</p>
+    <span>{date || null}</span>
+  </>
 );
-
 
 export default Article;
