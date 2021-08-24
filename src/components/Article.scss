@@ -1,0 +1,19 @@
+.article {
+  margin: 0 auto;
+
+  padding: 50px;
+  width: 50%;
+  border: 5px solid #7a0101;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  &__title {
+    color: #202020;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: flex-end;
+    color: #424242;
+  }
+}
