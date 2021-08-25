@@ -12,11 +12,7 @@ const article = {
 function App() {
   return (
     <>
-      <Article
-        title={article.title}
-        text={article.text}
-        date={article.date}
-      />
+      <Article {...article} />
     </>
   );
 }

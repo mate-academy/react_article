@@ -4,7 +4,7 @@ import './Article.scss';
 
 export function Article({ title, text, date }) {
   return (
-    <div className="article">
+    <article className="article">
       <h1 className="article__title">
         {title}
       </h1>
@@ -16,7 +16,7 @@ export function Article({ title, text, date }) {
       <span className="article__date">
         {date}
       </span>
-    </div>
+    </article>
   );
 }
 
