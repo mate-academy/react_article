@@ -1,0 +1,21 @@
+.article {
+  width: 80vw;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background-color: rgb(241, 241, 234);
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
