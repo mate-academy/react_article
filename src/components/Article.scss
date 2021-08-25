@@ -1,0 +1,23 @@
+.article {
+  padding: 50px;
+  max-width: 60%;
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  &__date {
+    padding: 10px;
+    display: block;
+    text-align: end;
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+}
