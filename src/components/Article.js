@@ -2,11 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Article = ({ title, text, date }) => (
-  <>
-    <h1>{title}</h1>
-    <span>{date}</span>
-    <p>{text}</p>
-  </>
+  <article
+    className="card bg-light"
+    style={{
+      maxWidth: '500px',
+      margin: '0 auto',
+      padding: '20px',
+    }}
+  >
+    <h1 className="card-title">{title}</h1>
+    <p className="card-text">{text}</p>
+    <span className="text-muted">{date}</span>
+  </article>
 );
 
 Article.defaultProps = {
