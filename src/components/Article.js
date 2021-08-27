@@ -1,15 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Article.scss';
 
 export const Article = ({ title, text, date }) => (
-  <article
-    className="card bg-light"
-    style={{
-      maxWidth: '500px',
-      margin: '0 auto',
-      padding: '20px',
-    }}
-  >
+  <article className="article card bg-light">
     <h1 className="card-title">{title}</h1>
     <p className="card-text">{text}</p>
     <span className="text-muted">{date}</span>
