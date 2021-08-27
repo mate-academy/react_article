@@ -11,11 +11,9 @@ const article = {
 };
 
 const App = () => (
-  <>
-    <div className="container">
-      <Article {...article} />
-    </div>
-  </>
+  <div className="container">
+    <Article {...article} />
+  </div>
 );
 
 export default App;
