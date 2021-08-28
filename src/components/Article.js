@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './Article.scss';
+
 export const Article = ({
   title,
   text,
   date,
 }) => (
-  <>
-    <h1>{title}</h1>
-    <p>{text}</p>
-    <span>{date}</span>
-  </>
+  <section className="article">
+    <h1 className="article__title">{title}</h1>
+    <p className="article__text">{text}</p>
+    <span className="article__date">{date}</span>
+  </section>
 );
 
 Article.propTypes = {

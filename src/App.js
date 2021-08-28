@@ -1,6 +1,8 @@
 import React from 'react';
 import { Article } from './components/Article';
 
+import './App.scss';
+
 // eslint-disable-next-line no-unused-vars
 const article = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
@@ -10,11 +12,11 @@ const article = {
 };
 
 const App = () => (
-  <Article
-    title={article.title}
-    text={article.text}
-    date={article.date}
-  />
+  <div className="container">
+    <Article
+      {...article}
+    />
+  </div>
 );
 
 export default App;
