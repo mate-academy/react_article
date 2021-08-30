@@ -13,9 +13,7 @@ const article = {
 
 const App = () => (
   <div className="container">
-    <Article
-      {...article}
-    />
+    <Article {...article} />
   </div>
 );
 
