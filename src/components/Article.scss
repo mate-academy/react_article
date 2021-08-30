@@ -1,0 +1,19 @@
+.article {
+  display: block;
+  margin: 0 auto;
+
+  width: 50%;
+  padding: 30px;
+
+  border: 5px solid maroon;
+
+  &__title {
+    color: #000;
+    text-align: center;
+  }
+
+  &__date {
+    color: grey;
+    font-weight: bold;
+  }
+}

@@ -1,1 +1,12 @@
-// style go here
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: bisque;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  top: 60px;
+}
