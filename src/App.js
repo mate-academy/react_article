@@ -12,7 +12,7 @@ const article = {
 };
 
 const App = () => (
-  <Article props={article} />
+  <Article myArticle={article} />
 );
 
 export default App;
