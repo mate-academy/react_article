@@ -1,1 +1,19 @@
-// style go here
+.h1,
+.span,
+.p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  color: red;
+}
+
+.span {
+  color: blue;
+}
+
+.p {
+  color: green;
+}
