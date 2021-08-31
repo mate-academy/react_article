@@ -1,0 +1,16 @@
+.Article {
+  padding: 0 15px;
+}
+
+.Article__title {
+  margin: 0 auto;
+  width: max-content;
+  margin-bottom: 25px;
+}
+
+.Article__date {
+  display: block;
+  width: max-content;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
