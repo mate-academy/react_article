@@ -9,7 +9,7 @@ const article = {
 };
 
 const App = () => (
-  <Article {...article} />
+  <Article article={article} />
 );
 
 export default App;
