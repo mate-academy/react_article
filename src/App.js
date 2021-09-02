@@ -12,7 +12,6 @@ const article = {
 
 const App = () => (
   <Article
-    className="article"
     title={article.title}
     text={article.text}
     date={article.date}
