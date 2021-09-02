@@ -12,11 +12,7 @@ const article = {
 const App = () => (
   <>
     <div>
-      <Article
-        title={article.title}
-        text={article.text}
-        date={article.date}
-      />
+      <Article {...article} />
     </div>
   </>
 );
