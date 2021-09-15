@@ -6,9 +6,9 @@ const Article = ({ title, text, data }) => (
     <h1>
       {title}
     </h1>
-    <spam>
+    <span>
       {text}
-    </spam>
+    </span>
     <p>
       {data}
     </p>
