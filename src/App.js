@@ -12,7 +12,11 @@ const article = {
 const App = () => (
   <>
     <h1>React Article</h1>
-    <Article {...article} />
+    <Article
+      text={article.text}
+      title={article.title}
+      date={article.date}
+    />
   </>
 );
 
