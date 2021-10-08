@@ -34,7 +34,7 @@
     "stylelint": "^13.13.1"
   },
   "scripts": {
-    "start": "mate-scripts start",
+    "start": "ESLINT_NO_DEV_ERRORS=true mate-scripts start",
     "build": "mate-scripts build",
     "test": "mate-scripts test",
     "lint-js": "mate-scripts lint -j",
