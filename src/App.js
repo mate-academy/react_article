@@ -10,7 +10,11 @@ const article = {
 };
 
 const App = () => (
-  <Article date={article.date} text={article.text} title={article.title} />
+  <Article
+    date={article.date}
+    text={article.text}
+    title={article.title}
+  />
 );
 
 export default App;
