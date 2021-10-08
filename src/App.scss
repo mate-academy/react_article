@@ -1,1 +1,7 @@
-// style go here
+.App {
+  background: #f2f5f6;
+  background: -moz-linear-gradient(top,  #f2f5f6 23%, #f2f5f6 23%, #f2f5f6 57%, #e3eaed 73%, #e3eaed 73%, #c8d7dc 100%);
+  background: -webkit-linear-gradient(top,  #f2f5f6 23%,#f2f5f6 23%,#f2f5f6 57%,#e3eaed 73%,#e3eaed 73%,#c8d7dc 100%);
+  background: linear-gradient(to bottom,  #f2f5f6 23%,#f2f5f6 23%,#f2f5f6 57%,#e3eaed 73%,#e3eaed 73%,#c8d7dc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 );
+}
