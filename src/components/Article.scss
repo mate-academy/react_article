@@ -1,0 +1,31 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+
+  &__title {
+    align-self: center;
+    margin: 20px auto;
+  }
+
+  &__date {
+    align-self: flex-end;
+    text-align: right;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  &__text {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(60, 60, 228);
+
+    &::first-letter {
+      margin-left: 25px;
+    }
+  }
+}
