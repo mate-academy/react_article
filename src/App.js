@@ -13,7 +13,11 @@ const article = {
 
 const App = () => (
   <div className="App">
-    <Article title={article.title} text={article.text} date={article.date} />
+    <Article
+      title={article.title}
+      text={article.text}
+      date={article.date}
+    />
   </div>
 );
 
