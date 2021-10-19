@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Article.css';
 
 const Article = ({ title, date, text }) => (
-  <div>
+  <div className="article-wrap">
     <h1>{title}</h1>
     <span>{date}</span>
     <p>{text}</p>
