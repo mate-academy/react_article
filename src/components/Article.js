@@ -7,9 +7,9 @@ export const Article = ({
   date,
 }) => (
   <>
-    <h1>{`${title}`}</h1>
-    <span>{`${date}`}</span>
-    <p>{`${text}`}</p>
+    <h1>{title}</h1>
+    <span>{date}</span>
+    <p>{text}</p>
   </>
 );
 
