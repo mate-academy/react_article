@@ -17,8 +17,8 @@ const article2 = {
 
 const App = () => (
   <>
-    <Article {...article} />
-    <Article {...article2} />
+    <Article title={article.title} date={article.date} text={article.text} />
+    <Article title={article2.title} date={article2.date} text={article2.text} />
   </>
 );
 
