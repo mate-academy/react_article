@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Article = ({
   title,
   text,
-  date
+  date,
 }) => (
   <>
     <h1>

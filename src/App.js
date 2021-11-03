@@ -13,7 +13,7 @@ const App = () => (
   <Article
     title={article.title}
     text={article.text}
-    dare={article.date}
+    date={article.date}
   />
 );
 
