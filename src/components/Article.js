@@ -6,16 +6,16 @@ export const Article = ({
   date,
   text,
 }) => (
-  <article className="Article">
-    <h1 className="Article_title">
+  <article>
+    <h1>
       {title}
     </h1>
 
-    <span className="Article_date">
+    <span>
       {date}
     </span>
 
-    <p className="Article_text">
+    <p>
       {text}
     </p>
   </article>
