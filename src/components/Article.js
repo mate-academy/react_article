@@ -4,20 +4,20 @@ import PropTypes from 'prop-types';
 const Article = ({ title, date, text }) => (
   <article>
     <h2>
-      {`${title}`}
+      {title}
     </h2>
     <p>
-      {`${text}`}
+      {text}
     </p>
     <small>
-      {`${date}`}
+      {date}
     </small>
   </article>
 );
 
 Article.defaultProps = {
   title: 'Article title',
-  date: new Date(),
+  date: '00/00/00',
   text: 'Article text content',
 };
 
