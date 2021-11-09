@@ -7,5 +7,6 @@ module.exports = {
       optionalDependencies: false,
       peerDependencies: false,
     }],
+    'react/prop-types': 0,
   },
 };
