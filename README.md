@@ -9,3 +9,6 @@ Implement an `Article` component that accept the next props:
 - `text` - should be displayed inside `p` tag
 
 The `App` renders an `Article` and passes the data from the `article` object.
+
+***Extra task (optional):***
+Add props validation using `PropTypes` library and `defaultProps`
