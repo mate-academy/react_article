@@ -1,1 +1,17 @@
-// style go here
+body {
+  background-color: red;
+}
+
+.article {
+  &__header {
+    color: green;
+  }
+
+  &__description {
+    color: blue;
+  }
+
+  &__date {
+    color: pink;
+  }
+}
