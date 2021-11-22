@@ -15,15 +15,12 @@ export const Article = ({ title, image, text, date }) => (
 );
 
 Article.propTypes = {
-  title: PropTypes.string,
-  image: PropTypes.string,
-  text: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
   date: PropTypes.string,
 };
 
 Article.defaultProps = {
-  title: '',
-  image: '',
-  text: '',
   date: new Date().toLocaleDateString(),
 };
