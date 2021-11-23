@@ -13,7 +13,7 @@ const article = {
 
 const App = () => (
   <>
-    <a className="app-logo" href="/#">
+    <a className="app-logo" href="#">
       <span className="app-logo__icon" role="img" aria-label="newspaper">
         📰
       </span>

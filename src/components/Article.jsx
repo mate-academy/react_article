@@ -8,7 +8,7 @@ export const Article = ({ title, image, text, date }) => (
 
     <div className="article__content">
       <h1 className="article__title">{title}</h1>
-      <div className="article__date">{date}</div>
+      <span className="article__date">{date}</span>
       <p className="article__text">{text}</p>
     </div>
   </article>
