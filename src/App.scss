@@ -1,1 +1,35 @@
-// style go here
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1 {
+  margin: 0;
+}
+
+.app-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 20px;
+
+  color: #000;
+
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &__caption {
+    color: #274564;
+
+    font-size: 12px;
+  }
+}
