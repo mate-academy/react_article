@@ -1,0 +1,30 @@
+.article {
+  margin: 0;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+
+  &__title {
+    margin: 0 0 30px;
+    max-width: 600px;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 38px;
+  }
+
+  &__date {
+    display: block;
+    margin-bottom: 30px;
+    color: #aaa;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 50px;
+    color: #777;
+    border-bottom: 1px solid #ddd;
+  }
+}
