@@ -25,7 +25,7 @@ Article.defaultProps = {
   text: 'Not today',
 };
 
-Article.protoTypes = {
+Article.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
   date: PropTypes.string,
