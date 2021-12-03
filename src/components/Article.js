@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 export const Article = ({ title, date, text }) => (
   <>
     <article className="article">
-      <h1>{title}</h1>
-      <span>
+      <h1 className="article__title">{title}</h1>
+      <span className="article__date">
         <i>{date}</i>
       </span>
       <p>{text}</p>
