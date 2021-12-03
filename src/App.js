@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.scss';
 import { Article } from './components/Article';
 
 const article = {
@@ -9,11 +10,9 @@ const article = {
 
 const App = () => (
   <>
-    <Article
-      title={article.title}
-      date={article.date}
-      text={article.text}
-    />
+    <div className="container">
+      <Article {...article} />
+    </div>
   </>
 );
 
