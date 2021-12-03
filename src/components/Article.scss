@@ -1,0 +1,14 @@
+.article {
+  padding: auto;
+  max-width: 50%;
+  margin: auto;
+
+  &__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  &__date {
+    font-size: 12px;
+  }
+}

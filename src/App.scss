@@ -1,1 +1,19 @@
-// style go here
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
