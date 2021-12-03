@@ -1,0 +1,12 @@
+.title {
+  text-align: center;
+}
+
+.dateOfArticle {
+  font-style: italic;
+}
+
+.paragraph {
+  font-size: 20px;
+  text-align: justify;
+}
