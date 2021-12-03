@@ -1,12 +1,10 @@
 .article {
+  padding: 15px;
   font-family: Arial, Helvetica, sans-serif serif;
-  padding: 10px;
   font-size: 20px;
   background-color: rgb(241, 235, 235);
   border-radius: 30px;
-  width: 100vw;
   margin: auto;
-  height: max-content;
 
   &__title {
     font-size: 35px;
