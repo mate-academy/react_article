@@ -1,0 +1,17 @@
+.article {
+  width: 500px;
+  padding: 40px;
+  margin: 40px auto 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fed;
+  border-radius: 10px;
+
+  &__date {
+    color: #666;
+  }
+
+  &__text {
+    text-align: justify;
+    color: #333;
+  }
+}
