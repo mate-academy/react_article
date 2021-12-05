@@ -1,1 +1,42 @@
-// style go here
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body,
+h1 {
+  margin: 0;
+}
+
+body {
+  background: center / cover no-repeat url("./pic.jpg");
+  height: 100vh;
+}
+
+.article {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px 100px;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(185, 185, 166);
+    padding: 30px;
+    width: 450px;
+    background: rgba(219, 219, 187, 0.9);
+  }
+
+  &__title {
+    display: flex;
+    text-align: center;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: right;
+  }
+}
