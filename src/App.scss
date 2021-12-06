@@ -1,1 +1,36 @@
-// style go here
+body {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background: linear-gradient(to left, #a14b8c, #283e51);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.article {
+  background-color: #283e51;
+  box-shadow: 20px 4px 52px 14px rgba(0, 0, 0, 0.3);
+  transition: 1s;
+
+  &:hover {
+    box-shadow: 20px 4px 52px 14px rgba(0, 0, 0, 0.6);
+    background-color: #29475d;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 30px;
+    border-radius: 10%;
+    width: 400px;
+  }
+}
