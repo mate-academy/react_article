@@ -1,1 +1,24 @@
-// style go here
+body {
+  margin: 0 auto;
+}
+
+.App {
+  font-size: 1.5rem;
+  font-weight: 400;
+  
+  background: linear-gradient(
+    to bottom right,
+    transparent 48%,
+    #efefef 48%,
+    #efefef 52%,
+    transparent 52%
+  ),
+    linear-gradient(
+    to bottom left,
+    transparent 48%,
+    #efefef 48%, 
+    #efefef 52%,
+    transparent 52%
+  );
+  background-size: 0.25rem 0.25rem;
+}
