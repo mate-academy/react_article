@@ -11,7 +11,9 @@ const article = {
 
 const App = () => (
   <Article
-    {...article}
+    title={article.title}
+    date={article.date}
+    text={article.text}
   />
 );
 
