@@ -13,7 +13,9 @@ const article = {
 const App = () => (
   <div className="App">
     <Article
-      {...article}
+      title={article.title}
+      date={article.date}
+      text={article.text}
     />
   </div>
 );
