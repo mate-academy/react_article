@@ -1,1 +1,22 @@
-// style go here
+.article {
+  font-family: 'Roboto', sans-serif;
+  padding: 50px;
+
+  $textColor: rgb(66, 66, 66);
+
+  &__title {
+    font-size: 25px;
+    color: $textColor;
+  }
+
+  &__date {
+    font-style: italic;
+    color: $textColor;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $textColor;
+  }
+}
