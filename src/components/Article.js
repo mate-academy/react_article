@@ -15,8 +15,12 @@ function Article({
   );
 }
 
+Article.defaultProps = {
+  title: 'Title',
+};
+
 Article.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   date: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
