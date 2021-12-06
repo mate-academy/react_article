@@ -9,30 +9,29 @@ body {
   padding: 20px;
   max-width: 1024px;
   min-width: 600px;
-  font-weight: 400;
   font-family: CustomSansSerif, "Lucida Grande", Arial, sans-serif;
 
   background-color: #fff;
   box-shadow: 0 15px 10px #363333;
 
   &__date {
+    margin: 21px 21px 12px;
     font-size: 15px;
     line-height: 28px;
     color: #79828b;
-    margin: 21px 21px 12px;
   }
 
   &__text {
     margin: 0 21px 12px;
     font-size: 17px;
-    line-height: 1.58;
+    line-height: 1.58em;
     color: #000c;
   }
 
   &__title {
+    margin: 21px 21px 12px;
     font-weight: 700;
     font-size: 30px;
-    margin: 21px 21px 12px;
     line-height: 34px;
     color: #000c;
   }
