@@ -1,0 +1,25 @@
+.article {
+  padding: 30px;
+  background: #fff;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+
+  &__date {
+    color: rgb(99, 99, 99);
+    font-size: 12px;
+  }
+
+  &__title {
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    color: rgb(116, 116, 116);
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: rgb(116, 116, 116);
+  }
+}
