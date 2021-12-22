@@ -6,19 +6,22 @@ export function Article({
   text,
   date,
 }) {
-  <h1>{title}</h1>;
-    <p>{text}</p>;
-      <span>{date}</span>;
+  return (
+    <>
+      <h1>{title}</h1>
+      <p>{text}</p>
+      <span>{date}</span>
+    </>
+  );
 }
 
 Article.defaultProps = {
-  title: 'Please title',
   text: 'Write text',
   date: 'MM/DD/YY',
 };
 
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   date: PropTypes.string,
 };
