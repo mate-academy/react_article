@@ -14,9 +14,11 @@ const Article = ({ article }) => {
 };
 
 Article.propTypes = {
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  article: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Article;
