@@ -10,9 +10,7 @@ const article = {
 };
 
 const App = () => (
-  <Article
-    {...article}
-  />
+  <Article {...article} />
 );
 
 export default App;
