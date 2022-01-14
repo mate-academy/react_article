@@ -1,0 +1,28 @@
+.article {
+  &__title {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  &__date {
+    display: block;
+    text-align: end;
+
+    color: blue;
+    opacity: 0.4;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  &__text {
+    font-size: 24px;
+    text-align: justify;
+    line-height: 200%;
+
+    &::before {
+      content: "";
+      margin-left: 60px;
+    }
+  }
+}
