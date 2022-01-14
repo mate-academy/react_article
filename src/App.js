@@ -1,6 +1,6 @@
 import React from 'react';
+import Artice from './components/Article';
 
-// eslint-disable-next-line no-unused-vars
 const article = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
   // eslint-disable-next-line max-len
@@ -9,7 +9,11 @@ const article = {
 };
 
 const App = () => (
-  <h1>React Article</h1>
+  <>
+    <h1><Artice title={article.title} /></h1>
+    <span><Artice date={article.date} /></span>
+    <p><Artice text={article.text} /></p>
+  </>
 );
 
 export default App;
