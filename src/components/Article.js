@@ -9,14 +9,8 @@ export const Article = ({ title, text, date }) => (
   </>
 );
 
-Article.defaultProps = {
-  title: 'Hello world!',
-  text: 'You know who was made.',
-  date: 'October 4, 1993',
-};
-
 Article.propTypes = {
-  title: PropTypes.string,
-  text: PropTypes.string,
-  date: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
 };
