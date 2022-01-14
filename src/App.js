@@ -10,9 +10,11 @@ const article = {
 
 const App = () => (
   <>
-    <h1><Artice title={article.title} /></h1>
-    <span><Artice date={article.date} /></span>
-    <p><Artice text={article.text} /></p>
+    <Artice
+      title={article.title}
+      date={article.date}
+      text={article.text}
+    />
   </>
 );
 
