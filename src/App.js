@@ -10,7 +10,7 @@ const article = {
 };
 
 const App = () => (
-  <Article title={article.title} text={article.text} />
+  <Article {...article} />
 );
 
 export default App;
