@@ -6,21 +6,15 @@ export const Article = ({
   date,
   text,
 }) => (
-  <>
+  <article>
     <p>{title}</p>
     <span>{date}</span>
     <p>{text}</p>
-  </>
+  </article>
 );
 
-Article.defaultProps = {
-  title: 'add title',
-  date: 'add date',
-  text: 'add text',
-};
-
 Article.propTypes = {
-  title: PropTypes.string,
-  date: PropTypes.string,
-  text: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
