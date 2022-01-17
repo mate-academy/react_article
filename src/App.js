@@ -1,5 +1,7 @@
 import React from 'react';
-import Article from './components/Article';
+import { Article } from './components/Article';
+// i dont understand why i need to delete it because
+// it doesnt work without an import
 
 // eslint-disable-next-line no-unused-vars
 const article = {
