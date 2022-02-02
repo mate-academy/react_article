@@ -1,1 +1,22 @@
-// style go here
+* {
+  background-color: rgb(238, 233, 230);
+}
+
+#root {
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 36px;
+  color: rgb(49, 4, 49);
+}
+
+span {
+  color: rgb(73, 3, 73);
+}
+
+p {
+  font-size: 24px;
+  color: rgb(73, 3, 73);
+}
