@@ -18,7 +18,7 @@ Article.propTypes = {
 Article.defaultProps = {
   title: 'No title has been assigned',
   date: 'Date has not been provided',
-  text: 'Text for the article was not submitted',
+  text: 'Text for the article was not submitted to Article component',
 };
 
 export default Article;
