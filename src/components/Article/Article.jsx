@@ -11,7 +11,7 @@ const Article = ({ title, date, text }) => (
 
 Article.defaultProps = {
   title: 'Untitled',
-  date: '',
+  date: 'No date',
   text: 'No content',
 };
 
