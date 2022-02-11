@@ -1,4 +1,7 @@
+import PropTypes from 'prop-types';
+
 /* eslint-disable react/react-in-jsx-scope */
+
 export const Article = ({ title, date, text }) => (
   <article>
     <h1>{title}</h1>
@@ -11,4 +14,10 @@ Article.defaultProps = {
   title: 'Default title',
   date: `${new Date()}`,
   text: 'default text',
+};
+
+Article.propTypes = {
+  title: PropTypes.string,
+  date: PropTypes.instanceOf(Date) || PropTypes.string,
+  text: PropTypes.string,
 };
