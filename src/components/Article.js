@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 export const Article = ({ title, date, text }) => (
@@ -7,3 +8,15 @@ export const Article = ({ title, date, text }) => (
     <p>{text}</p>
   </>
 );
+
+Article.defaultProps = {
+  title: 'Enter the title',
+  date: 'Enter the date',
+  text: 'Enter the text',
+};
+
+Article.propsTypes = {
+  title: PropTypes.string,
+  date: PropTypes.string,
+  text: PropTypes.string,
+};
