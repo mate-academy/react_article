@@ -1,5 +1,5 @@
 import React from 'react';
-import Article from './Article';
+import Article from './components/Article';
 // eslint-disable-next-line no-unused-vars
 const article = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
