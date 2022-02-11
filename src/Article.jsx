@@ -11,7 +11,7 @@ export const Article = ({ title, date, text }) => (
 
 Article.defaultProps = {
   title: 'Title',
-  date: new Date(),
+  date: ` ${new Date()} `,
   text: 'Lorem ipsum dolor sit amet.',
 };
 
