@@ -1,6 +1,5 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-
-/* eslint-disable react/react-in-jsx-scope */
 
 export const Article = ({ title, date, text }) => (
   <article>
