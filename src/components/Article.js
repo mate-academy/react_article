@@ -3,17 +3,11 @@ import PropTypes from 'prop-types';
 
 const Article = ({ title, data, text }) => (
   <>
-    <h1>
-      {title}
-    </h1>
+    <h1>{title}</h1>
 
-    <date>
-      {data}
-    </date>
+    <date>{data}</date>
 
-    <p>
-      {text}
-    </p>
+    <p>{text}</p>
   </>
 );
 
