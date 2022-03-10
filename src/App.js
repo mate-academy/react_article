@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Article } from './components/Article';
+import { Article } from './components/Article/Article';
 import './App.scss';
 
 const App = () => (
-  <main className="App">
+  <main className="app">
     <Article
       title="Electric-propulsion startup Orbion raises $9.2 million Series A"
       text="WASHINGTON — Orbion Space Technology announced Aug.
