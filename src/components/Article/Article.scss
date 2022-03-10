@@ -1,0 +1,25 @@
+.article {
+  flex: 0.6;
+  padding: 30px;
+  background-color: #fff;
+  line-height: 1.5;
+
+  &__title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    letter-spacing: 1.2px;
+  }
+
+  &__date{
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    margin: 20px 0;
+    color: #636060;
+  }
+
+  &__text {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+  }
+}
