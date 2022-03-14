@@ -17,6 +17,7 @@ const App = () => (
       text={article.text}
       date={article.date}
     />
+
   </div>
 );
 
