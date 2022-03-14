@@ -1,0 +1,19 @@
+.article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: 1px solid black;
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__date {
+    font-size: 12px;
+  }
+
+  &__description {
+    text-align: justify;
+  }
+}
