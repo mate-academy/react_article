@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Article = ({
-  title,
-  text,
-  date,
+  title, text, date,
 }) => (
   <>
     <h1>{title}</h1>
