@@ -1,7 +1,6 @@
 import React from 'react';
 import { Article } from './components/Article';
 
-// eslint-disable-next-line no-unused-vars
 const article = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
   // eslint-disable-next-line max-len
@@ -9,10 +8,8 @@ const article = {
   date: 'August 30, 2019',
 };
 
-const { title, text, date } = article;
-
 const App = () => (
-  <Article title={title} text={text} date={date} />
+  <Article {...article} />
 );
 
 export default App;
