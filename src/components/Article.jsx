@@ -1,15 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Article = ({
-  title,
-  date,
-  text,
-}) => (
+export const Article = ({ article }) => (
   <>
-    <h1>{title}</h1>
-    <span>{date}</span>
-    <p>{text}</p>
+    <h1>{article.title}</h1>
+    <span>{article.date}</span>
+    <p>{article.text}</p>
   </>
 );
 
