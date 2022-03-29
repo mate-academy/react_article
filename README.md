@@ -12,3 +12,6 @@ The `App` renders an `Article` and passes the data from the `article` object.
 
 ***Extra task (optional):***
 Add props validation using `PropTypes` library and `defaultProps`
+Requirements:
+1. H1 element should be visible;
+2. H1 element should contein text "React Article"
