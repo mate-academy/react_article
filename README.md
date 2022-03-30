@@ -12,8 +12,8 @@ The `App` renders an `Article` and passes the data from the `article` object.
 
 ***Extra task (optional):***
 Add props validation using `PropTypes` library and `defaultProps`
- Requirements:
+ ## REQUIREMENTS:
  1. Page "Article" should contain these attributes:
- - `data-cy="title"` attribute;
- - `data-cy="date"` attribute;
- - `data-cy="text"` attribute.
+ - `data-cy="title"` attribute inside `h1` tag;
+ - `data-cy="date"` attribute inside a `span` tag;
+ - `data-cy="text"` attributeinside `p` tag.
