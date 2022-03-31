@@ -17,3 +17,4 @@ Add props validation using `PropTypes` library and `defaultProps`
  - `data-cy="title"` attribute inside `h1` tag;
  - `data-cy="date"` attribute inside a `span` tag;
  - `data-cy="text"` attributeinside `p` tag.
+ 
