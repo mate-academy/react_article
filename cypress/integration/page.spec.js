@@ -6,17 +6,17 @@ describe('Page', () => {
   });
 
   it('should have title of the article', ()=> {
-    cy.getByDataCy('title')
+    cy.get('h1')
       .should('contain', article.title);
   });
 
   it('should have date of the article', ()=> {
-    cy.getByDataCy('date')
+    cy.get('span')
       .should('contain', article.date);
   });
 
   it('should have the article`s text', ()=> {
-    cy.getByDataCy('text')
+    cy.get('p')
       .should('contain', article.text);
   });
 });
