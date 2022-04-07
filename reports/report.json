@@ -1,0 +1,240 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-07T13:58:31.692Z",
+    "end": "2022-04-07T13:58:52.740Z",
+    "duration": 3125,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "78d9cdcd-80ff-4d57-aeb9-f5c5d5e57046",
+      "title": "",
+      "fullFile": "src/App.spec.jsx",
+      "file": "src/App.spec.jsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e49b801b-2f1d-4dae-a906-6ad7f75271a4",
+          "title": "App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should render given data",
+              "fullTitle": "App should render given data",
+              "timedOut": null,
+              "duration": 661,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Object(_cypress_react__WEBPACK_IMPORTED_MODULE_1__[\"mount\"])( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__[\"jsxDEV\"])(_App__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n  fileName: _jsxFileName,\n  lineNumber: 13,\n  columnNumber: 11\n}, undefined));\ncy.get('h1').contains(article.title);\ncy.get('span').contains(article.date);\ncy.get('p').contains(article.text);",
+              "err": {},
+              "uuid": "f75df3cc-6b57-459d-99ea-c941dc435bc1",
+              "parentUUID": "e49b801b-2f1d-4dae-a906-6ad7f75271a4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f75df3cc-6b57-459d-99ea-c941dc435bc1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 661,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "683804ef-957a-4905-a451-81d3b55be35d",
+      "title": "",
+      "fullFile": "src/components/Article.spec.jsx",
+      "file": "src/components/Article.spec.jsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16060bbd-7c44-4945-bfc0-bfbe61c78d9c",
+          "title": "Article",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should render custom props",
+              "fullTitle": "Article should render custom props",
+              "timedOut": null,
+              "duration": 75,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const title = 'title';\nconst date = 'date';\nconst text = 'Lorem';\nObject(_cypress_react__WEBPACK_IMPORTED_MODULE_1__[\"mount\"])( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__[\"jsxDEV\"])(_Article__WEBPACK_IMPORTED_MODULE_2__[\"Article\"], {\n  title: title,\n  date: date,\n  text: text\n}, void 0, false, {\n  fileName: _jsxFileName,\n  lineNumber: 11,\n  columnNumber: 11\n}, undefined));\ncy.get('h1').contains(title);\ncy.get('span').contains(date);\ncy.get('p').contains(text);",
+              "err": {},
+              "uuid": "a0b32c1c-3135-423b-8d6f-4d62e081e309",
+              "parentUUID": "16060bbd-7c44-4945-bfc0-bfbe61c78d9c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render random props",
+              "fullTitle": "Article should render random props",
+              "timedOut": null,
+              "duration": 56,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const title = Math.random();\nconst date = Math.random();\nconst text = Math.random();\nObject(_cypress_react__WEBPACK_IMPORTED_MODULE_1__[\"mount\"])( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__[\"jsxDEV\"])(_Article__WEBPACK_IMPORTED_MODULE_2__[\"Article\"], {\n  title: title,\n  date: date,\n  text: text\n}, void 0, false, {\n  fileName: _jsxFileName,\n  lineNumber: 23,\n  columnNumber: 11\n}, undefined));\ncy.get('h1').contains(title);\ncy.get('span').contains(date);\ncy.get('p').contains(text);",
+              "err": {},
+              "uuid": "960578c5-0db6-4dfe-b83b-4d4e55c0a0cf",
+              "parentUUID": "16060bbd-7c44-4945-bfc0-bfbe61c78d9c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a0b32c1c-3135-423b-8d6f-4d62e081e309",
+            "960578c5-0db6-4dfe-b83b-4d4e55c0a0cf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 131,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "77deed0b-f922-45f5-b298-48a046e269da",
+      "title": "",
+      "fullFile": "cypress/integration/page.spec.js",
+      "file": "cypress/integration/page.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c6d2d968-b05e-404b-a861-2c0dbb68c4c2",
+          "title": "Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "to be visitable",
+              "fullTitle": "Page to be visitable",
+              "timedOut": null,
+              "duration": 2333,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('h1').contains(article.title);\ncy.get('span').contains(article.date);\ncy.get('p').contains(article.text);",
+              "err": {},
+              "uuid": "2413d655-adeb-498c-8e05-94f36b45efba",
+              "parentUUID": "c6d2d968-b05e-404b-a861-2c0dbb68c4c2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2413d655-adeb-498c-8e05-94f36b45efba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2333,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "raw_reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
