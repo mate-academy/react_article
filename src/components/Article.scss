@@ -1,0 +1,21 @@
+.article {
+  &__title {
+    color: #222;
+    text-align: center;
+  }
+
+  &__date {
+    display: block;
+    font-style: italic;
+    padding-right: 15px;
+    text-align: end;
+  }
+
+  &__paragraph {
+    padding: 15px;
+    line-height: 1.5;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 10px 5px 10px #ccc;
+  }
+}
