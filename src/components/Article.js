@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Article = ({
   articleInfo: {
     title,
-    date = `The date isn't defined`,
+    date,
     text,
   },
 }) => (
