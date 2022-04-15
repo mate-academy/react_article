@@ -2,11 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Article = ({
-  articleInfo: {
-    title,
-    date,
-    text,
-  },
+  title,
+  date,
+  text,
 }) => (
   <>
     <h1>
