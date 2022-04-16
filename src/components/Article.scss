@@ -1,0 +1,28 @@
+.article {
+  margin: 0 auto;
+  padding: 30px 40px;
+  height: 100vh;
+  max-width: 800px;
+
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 27, 27);
+  box-shadow: 10px 10px 8px rgb(20, 20, 20);
+
+  &__title {
+    color: rgb(212, 229, 252);
+    text-align: center;
+  }
+
+  &__date {
+    display: block;
+    font-style: italic;
+    text-align: right;
+    font-size: 0.9em;
+    opacity: 0.5;
+  }
+
+  &__text {
+    text-align: justify;
+    color: rgb(209, 209, 209);
+  }
+}
