@@ -10,15 +10,14 @@ const Article = ({ title, date, text }) => (
 );
 
 Article.defaultProps = {
-  title: '',
-  date: '',
-  text: '',
+  date: 'No dates',
+  text: 'Will be soon',
 };
 
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  date: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default Article;
