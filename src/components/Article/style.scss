@@ -1,0 +1,17 @@
+.article {
+  &__title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8, 8, 94);
+    text-align: center;
+  }
+
+  &__date {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
