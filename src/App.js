@@ -12,7 +12,7 @@ const article = {
 const App = () => (
   <Article
     title={article.title}
-    date={article.data}
+    date={article.date}
     text={article.text}
   />
 );
