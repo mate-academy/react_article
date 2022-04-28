@@ -16,7 +16,7 @@ export const Article = ({
 Article.defaultProps = {
   title: 'Write down title',
   text: 'Write down title',
-  date: 'Write down data: day, month, year',
+  date: 'Write down date: day, month, year',
 };
 
 Article.prototypes = {
