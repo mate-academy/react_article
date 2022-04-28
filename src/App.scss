@@ -1,1 +1,63 @@
-// style go here
+body {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  max-width: 900px;
+  background-color: rgb(255, 225, 230);
+  padding: 32px;
+  border-radius: 20px;
+
+  transition: all 0.5s;
+  animation: fade 3s infinite;
+  animation-timing-function: linear;
+
+  &__title {
+    color: rgb(33, 186, 207);
+  }
+
+  &:hover {
+    animation: grow 2s infinite;
+    box-shadow: 3px 3px rgb(236, 43, 233), -1em 0.4em rgb(228, 83, 132);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
