@@ -14,8 +14,7 @@ export const Article = ({
 );
 
 Article.defaultProps = {
-  title: 'Write down title',
-  text: 'Write down title',
+  text: 'Write down text',
   date: 'Write down date: day, month, year',
 };
 
