@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 export const Article = ({ article: { title, date, text } }) => (
-  <>
+  <article>
     <h1 className="article__title">{title}</h1>
     <span className="article__date">{date}</span>
     <p className="article__text">{text}</p>
-  </>
+  </article>
 );
 
 Article.defaultProps = {
