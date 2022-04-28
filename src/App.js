@@ -10,5 +10,9 @@ const article = {
 };
 
 export const App = () => (
-  <Article {...article} />
+  <Article
+    title={article.title}
+    text={article.text}
+    date={article.date}
+  />
 );
