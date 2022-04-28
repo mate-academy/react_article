@@ -18,9 +18,9 @@ export const Article = (props) => {
 };
 
 Article.defaultProps = {
-  title: '',
-  text: '',
-  date: '',
+  title: 'Title is not find',
+  text: 'Text is not find',
+  date: 'Date is not find',
 };
 
 Article.propTypes = {
