@@ -7,7 +7,7 @@ const Article = ({
   text,
   date,
 }) => (
-  <>
+  <article>
     <h1 className="title">
       {title}
     </h1>
@@ -19,7 +19,7 @@ const Article = ({
     <p className="text">
       {text}
     </p>
-  </>
+  </article>
 );
 
 Article.defaultProps = {
