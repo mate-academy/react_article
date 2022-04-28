@@ -21,16 +21,15 @@ function Article({
   );
 }
 
-Article.defaulProps = {
-  title: 'No title',
-  date: 'No date',
-  text: 'No text',
-};
-
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  date: PropTypes.string,
+  text: PropTypes.string,
+};
+
+Article.defaultProps = {
+  date: 'No date',
+  text: 'No text',
 };
 
 export default Article;
