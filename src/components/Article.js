@@ -12,9 +12,9 @@ function Article({ title, text, date }) {
 }
 
 Article.defaultProps = {
-  title: 'Some title',
-  text: 'Some text',
-  date: 'September',
+  title: 'No title',
+  text: 'No description',
+  date: 'No date',
 };
 
 Article.propTypes = {
