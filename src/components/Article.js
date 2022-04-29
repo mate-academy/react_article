@@ -1,13 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Article = (props) => {
-  const {
-    title,
-    text,
-    date,
-  } = props;
-
+export function Article({ title, text, date }) {
   return (
     <>
       <h1>{title}</h1>
@@ -15,12 +9,12 @@ export const Article = (props) => {
       <p>{text}</p>
     </>
   );
-};
+}
 
 Article.defaultProps = {
-  title: '',
-  text: '',
-  date: '',
+  title: 'no Title',
+  text: 'without Text',
+  date: 'no actual date',
 };
 
 Article.propTypes = {
