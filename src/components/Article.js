@@ -7,13 +7,13 @@ const Article = ({
   text,
 }) => (
   <article className="content">
-    <h1 className="title">
+    <h1 className="content__title">
       {title}
     </h1>
-    <span className="date">
+    <span className="content__date">
       {date}
     </span>
-    <p className="text">
+    <p className="content__text">
       {text}
     </p>
   </article>
