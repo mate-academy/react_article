@@ -7,18 +7,18 @@ function Article({
   date,
 }) {
   return (
-    <>
+    <div className="article">
       <h1>{title}</h1>
       <p>{text}</p>
       <span>{date}</span>
-    </>
+    </div>
   );
 }
 
 Article.defaultProps = {
-  title: 'React Article',
-  text: 'I like React',
-  date: 'August 32, 11019',
+  title: 'No title',
+  text: 'No text',
+  date: 'No date',
 };
 
 Article.propTypes = {
