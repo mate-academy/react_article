@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Article = ({title, date, text}) => (
+export const Article = ({ title, date, text }) => (
   <>
     <h1>{title}</h1>
     <span>{date}</span>
@@ -12,13 +12,11 @@ export const Article = ({title, date, text}) => (
 Article.defaultProps = {
   title: 'unknown',
   date: 'unknown',
-  text: 'unknown'
+  text: 'unknown',
 };
 
 Article.propTypes = {
   title: PropTypes.string,
   date: PropTypes.string,
-  text: PropTypes.string
+  text: PropTypes.string,
 };
-
-
