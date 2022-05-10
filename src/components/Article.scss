@@ -1,0 +1,43 @@
+.article {
+  max-width: 500px;
+  padding: 16px 24px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 24px 0 rgba($color: #000, $alpha: 0.2);
+
+  transition-property: box-shadow, transform;
+  transition-duration: 0.3s;
+
+  &:hover {
+    transform: translateY(4px);
+
+    box-shadow: 0 0 12px 0 rgba($color: #000, $alpha: 0.3);
+  }
+
+  &__title {
+    margin-top: 0;
+    padding: 4px;
+
+    color: #54b;
+
+    border-radius: 4px;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__publication-date {
+    display: block;
+    margin-left: auto;
+    width: max-content;
+    padding: 4px;
+
+    color: #fff;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+    background-color: #bbd;
+  }
+}
