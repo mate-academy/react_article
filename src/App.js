@@ -10,19 +10,7 @@ const article = {
 };
 
 const App = () => (
-  <>
-    <h1>
-      <Article title={article} />
-    </h1>
-
-    <span>
-      <Article date={article} />
-    </span>
-
-    <p>
-      <Article text={article} />
-    </p>
-  </>
+  <Article info={article} />
 );
 
 export default App;
