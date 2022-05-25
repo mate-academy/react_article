@@ -19,7 +19,7 @@ Article.defaultProps = {
   text: 'Add text',
 };
 
-Article.propTyoes = {
+Article.propTypes = {
   title: PropTypes.string,
   date: PropTypes.string,
   text: PropTypes.string,
