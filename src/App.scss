@@ -1,1 +1,21 @@
-// style go here
+html {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: #f0f 1px 0 10px;
+}
+
+p {
+  font-size: 18px;
+  background-color: rgba(251, 191, 201, 0.6);
+  padding: 15px;
+}
+
+span {
+  display: block;
+  font-size: 24px;
+  text-align: right;
+  color: #f0f;
+}
