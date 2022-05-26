@@ -1,5 +1,5 @@
 # React article
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_article/)
+- Replace `<your_account>` with your Github username in the [DEMO LINK](https://Oleksandr-Ivanchenko.github.io/react_article/)
 - Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
 
 ## Task
@@ -9,3 +9,10 @@ Implement an `Article` component that accept the next props:
 - `text` - should be displayed inside `p` tag
 
 The `App` renders an `Article` and passes the data from the `article` object.
+
+Реализуйте компонент `Article`, который принимает следующие реквизиты:
+- `title` - должен отображаться внутри тега `h1`
+- `дата` - должна отображаться внутри тега `span`
+- `text` - должен отображаться внутри тега `p`
+
+«Приложение» отображает «Статью» и передает данные из объекта «статья».
