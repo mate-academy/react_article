@@ -16,7 +16,6 @@ const App = () => (
       text={article.text}
       date={article.date}
     />
-    {console.log(Article.props)}
   </>
 );
 
