@@ -1,1 +1,21 @@
-// style go here
+body {
+  margin: 0;
+}
+
+.article {
+  padding: 50px 80px;
+
+  background-color: oldlace;
+
+  &__date {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+  }
+
+  &__text {
+    padding-top: 20px;
+
+    letter-spacing: 1px;
+  }
+}
