@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Article = ({ title, date, text }) => (
   <>
@@ -7,3 +8,12 @@ export const Article = ({ title, date, text }) => (
     <p>{text}</p>
   </>
 );
+
+Article.propTypes = {
+  // eslint-disable-next-line react/require-default-props
+  title: PropTypes.string,
+  // eslint-disable-next-line react/require-default-props
+  date: PropTypes.string,
+  // eslint-disable-next-line react/require-default-props
+  text: PropTypes.string,
+};
