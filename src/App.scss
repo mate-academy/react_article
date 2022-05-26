@@ -1,1 +1,19 @@
-// style go here
+body {
+  background-color: rgb(252, 230, 200);
+  color: rgb(156, 94, 49);
+  width: 500px;
+}
+
+.content {
+  &__title {
+    color: rgb(171, 101, 51);
+  }
+
+  &__block {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(249, 223, 197);
+    border-radius: 10px;
+    border: 1px solid rgb(243, 193, 150);
+  }
+}
