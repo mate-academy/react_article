@@ -12,7 +12,7 @@ export const Article = ({ title, date, text }) => (
 Article.defaultProps = {
   title: 'Without text',
   date: `${new Date()}`,
-  text: 'London - capital of GB',
+  text: 'London - is capital of GB',
 };
 
 Article.propTypes = {
