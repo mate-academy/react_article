@@ -3,13 +3,15 @@ import PropTypes from 'prop-types';
 
 export const Article = ({ title, date, text }) => (
   <>
-    <article className="message is-info">
+    <article className="message is-info message is-danger">
       <div className="message-header">
         <h1>{title}</h1>
       </div>
+      <div className="message-body">
+        <strong><span>{date}</span></strong>
+        <p>{text}</p>
+      </div>
     </article>
-    <strong><span>{date}</span></strong>
-    <p>{text}</p>
   </>
 );
 

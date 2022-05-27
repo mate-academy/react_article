@@ -11,13 +11,15 @@ const article = {
   date: 'August 30, 2019',
 };
 
+const { title, date, text } = article;
+
 const App = () => (
   <article className="message is-danger">
     <div className="message-body">
       <Article
-        title={article.title}
-        date={article.date}
-        text={article.text}
+        title={title}
+        date={date}
+        text={text}
       />
     </div>
   </article>
