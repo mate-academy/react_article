@@ -1,4 +1,7 @@
 import React from 'react';
+import { Article } from './components/Article';
+import 'bulma/css/bulma.min.css';
+// import { Message } from 'react-bulma-components';
 
 // eslint-disable-next-line no-unused-vars
 const article = {
@@ -8,8 +11,18 @@ const article = {
   date: 'August 30, 2019',
 };
 
+const { title, date, text } = article;
+
 const App = () => (
-  <h1>React Article</h1>
+  <article className="message is-danger">
+    <div className="message-body">
+      <Article
+        title={title}
+        date={date}
+        text={text}
+      />
+    </div>
+  </article>
 );
 
 export default App;
