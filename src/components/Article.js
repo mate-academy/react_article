@@ -9,12 +9,6 @@ export const Article = ({ title, text, date }) => (
   </>
 );
 
-Article.defaultProp = {
-  title: '',
-  text: '',
-  date: '',
-};
-
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
