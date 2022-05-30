@@ -11,7 +11,14 @@ const article = {
 
 const App = () => (
   < >
-    <Article article={article} />
+    <h1>React Article</h1>
+
+    <Article
+      title={article.title}
+      text={article.text}
+      date={article.date}
+    />
+    {console.log(Article.props)}
   </>
 );
 
