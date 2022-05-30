@@ -9,11 +9,11 @@ export const Article = ({ propsOfArticle }) => {
   } = propsOfArticle;
 
   return (
-    <>
+    <article>
       <h1>{ title }</h1>
       <span>{ date }</span>
       <p>{ text }</p>
-    </>
+    </article>
   );
 };
 
