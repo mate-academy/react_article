@@ -1,22 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Article = ({
-  title,
-  text,
-  date,
-}) => (
-  <>
-    <h1>{title}</h1>
-    <p>{text}</p>
-    <span>{date}</span>
-  </>
-);
+const Article = ({ props }) => {
+  const {
+    title,
+    text,
+    date,
+  } = props;
+
+  return (
+    <article>
+      <h1>{title}</h1>
+      <p>{text}</p>
+      <span>{date}</span>
+    </article>
+  );
+};
 
 Article.propType = {
-  title: PropTypes.string,
-  text: PropTypes.string,
-  date: PropTypes.string,
+  article: PropTypes.shape({
+    title: PropTypes.string,
+    text: PropTypes.string,
+    date: PropTypes.string,
+  }),
 };
 
 export default Article;
