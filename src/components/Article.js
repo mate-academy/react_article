@@ -13,8 +13,10 @@ export const Article = ({
   </article>
 );
 
-Article.prototype = {
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+Article.protoTypes = {
+  article: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+  }).isRequired,
 };
