@@ -1,17 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Article = ({ props }) => {
-  const { title, text, date } = props;
-
-  return (
-    <>
-      <h1>{title}</h1>
-      <span>{date}</span>
-      <p>{text}</p>
-    </>
-  );
-};
+const Article = ({ title, text, date }) => (
+  <>
+    <h1>{title}</h1>
+    <span>{date}</span>
+    <p>{text}</p>
+  </>
+);
 
 Article.propType = {
   title: PropTypes.string.isRequired,
