@@ -10,10 +10,7 @@ export const Article = ({ title, date, text }) => (
 );
 
 Article.propTypes = {
-  // eslint-disable-next-line react/require-default-props
-  title: PropTypes.string,
-  // eslint-disable-next-line react/require-default-props
-  date: PropTypes.string,
-  // eslint-disable-next-line react/require-default-props
-  text: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
