@@ -9,6 +9,4 @@ const article = {
   date: 'August 30, 2019',
 };
 
-const App = () => <Article {...article} />;
-
-export default App;
+export const App = () => <Article {...article} />;
