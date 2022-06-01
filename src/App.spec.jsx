@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from '@cypress/react';
-import App from './App';
+import { App } from './components/App';
 
 const article = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
