@@ -1,5 +1,5 @@
 import React from 'react';
-import Article from './components/Article';
+import { Article } from './components/Article';
 
 // eslint-disable-next-line no-unused-vars
 const article = {
