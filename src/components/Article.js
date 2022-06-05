@@ -12,13 +12,7 @@ export function Article({ title, date, text }) {
 }
 
 Article.propTypes = {
-  title: PropTypes.string,
-  date: PropTypes.string,
-  text: PropTypes.string,
-};
-
-Article.defaultProps = {
-  title: 'Please, write title there',
-  date: 'August 30, 1939',
-  text: 'Please, write text there',
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
