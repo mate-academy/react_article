@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.article {
+  padding: 28px;
+  width: 60%;
+  border: 2px solid firebrick;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 44px;
+    text-align: center;
+    color: darkolivegreen;
+  }
+
+  &__date {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: gray;
+  }
+
+  &__text {
+    text-align: justify;
+    font-size: 18px;
+  }
+}
