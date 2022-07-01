@@ -1,11 +1,11 @@
 import React from 'react';
 import PropsTypes from 'prop-types';
 
-export const Article = props => (
+export const Article = ({ date, text, title }) => (
   <React.Fragment>
-    <h1>{props.title}</h1>
-    <span>{props.date}</span>
-    <p>{props.text}</p>
+    <h1>{title}</h1>
+    <span>{date}</span>
+    <p>{text}</p>
   </React.Fragment>
 );
 
