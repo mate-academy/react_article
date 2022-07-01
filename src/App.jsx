@@ -14,7 +14,7 @@ const article = {
     Aerospace, and French startups ExoTrail and ThrustMe. Orbion’s distinction is in
     its approach to manufacturing, CEO Brad King said in an interview. The company is
     modelling its Aurora thruster production after the approach defense contractors use
-    to build tactical missiles, he said.`,
+    rea to build tactical missiles, he said.`,
   date: 'August 30, 2019',
 };
 
