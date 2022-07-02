@@ -5,7 +5,7 @@
 ## Task
 Implement an `Article` component that accept the next props:
 - `title` - should be displayed inside `h1` tag
-- `date` - should be displayed inside a `span` tagw
+- `date` - should be displayed inside a `span` tag
 - `text` - should be displayed inside `p` tag
 
 The `App` renders an `Article` and passes the data from the `article` object.
