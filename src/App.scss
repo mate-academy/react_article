@@ -1,1 +1,14 @@
-// style go here
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+h1:first-child {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 24px;
+  padding: 0 100px;
+}
