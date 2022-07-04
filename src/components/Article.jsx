@@ -1,11 +1,13 @@
 import React from 'react';
 
-export function Article(props) {
+function Article({ title, date, text }) {
   return (
     <>
-      <h1>{props.title}</h1>
-      <span>{props.date}</span>
-      <p>{props.text}</p>
+      <h1>{title}</h1>
+      <span>{date}</span>
+      <p>{text}</p>
     </>
   );
 }
+
+export default Article;
