@@ -6,21 +6,19 @@ export const Article = ({
   text,
   date,
 }) => (
-  <>
-    <article>
-      <h1>
-        {title}
-      </h1>
+  <article>
+    <h1>
+      {title}
+    </h1>
 
-      <span>
-        {date}
-      </span>
+    <span>
+      {date}
+    </span>
 
-      <p>
-        {text}
-      </p>
-    </article>
-  </>
+    <p>
+      {text}
+    </p>
+  </article>
 );
 
 Article.prototype = {
