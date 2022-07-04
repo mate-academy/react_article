@@ -13,7 +13,7 @@ export function Article({ title, date, text }) {
 
 Article.propTypes = {
   title: PropTypes.string,
-  date: PropTypes.number,
+  date: PropTypes.string,
   text: PropTypes.string,
 };
 
