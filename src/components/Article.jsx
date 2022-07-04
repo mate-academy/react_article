@@ -10,9 +10,9 @@ const Article = ({ title, text, date }) => (
 );
 
 Article.propsTypes = {
-  title: PropsTypes.string,
-  date: PropsTypes.string,
-  text: PropsTypes.string,
+  title: PropsTypes.string.isRequired,
+  date: PropsTypes.string.isRequired,
+  text: PropsTypes.string.isRequired,
 };
 
 export default Article;
