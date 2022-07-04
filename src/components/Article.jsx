@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Article({ title, text, data }) {
+function Article({ title, text, date }) {
   return (
     <>
       <h1>{title}</h1>
-      <span>{data}</span>
+      <span>{date}</span>
       <p>{text}</p>
     </>
   );
