@@ -10,7 +10,7 @@ const article = {
 };
 
 const App = () => (
-  <Article {...article} />
+  <Article title={article.title} date={article.date} text={article.text} />
 );
 
 export default App;
