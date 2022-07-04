@@ -12,7 +12,13 @@ const article = {
 const App = () => {
   const { title, date, text } = article;
 
-  return <Article title={title} date={date} text={text} />;
+  return (
+    <Article
+      title={title}
+      date={date}
+      text={text}
+    />
+  );
 };
 
 export default App;
