@@ -7,11 +7,11 @@ export function Article({
   text,
 }) {
   return (
-    <React.Fragment>
+    <>
       <h1>{title}</h1>
       <span>{date}</span>
       <p>{text}</p>
-    </React.Fragment>
+    </>
   );
 }
 
