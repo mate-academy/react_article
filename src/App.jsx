@@ -8,8 +8,10 @@ const article = {
   date: 'August 30, 2019',
 };
 
-const App = () => (
-  <h1>React Article</h1>
-);
+export const App = () => (
+  <div className="App">
+    <h1>React Article</h1>
 
-export default App;
+    {/* Add an <Article /> and pass `title`, `text` and `date` from the `article` object as props */}
+  </div>
+);
