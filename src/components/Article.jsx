@@ -4,8 +4,8 @@ export function Article({ title, date, text }) {
   return (
     <>
       <h1>{title}</h1>
-      <date>{date}</date>
-      <text>{text}</text>
+      <span>{date}</span>
+      <p>{text}</p>
     </>
   );
 }

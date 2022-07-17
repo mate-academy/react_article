@@ -2,7 +2,7 @@
 
 Implement an `Article` component that accepts the following props:
 - `title` — should be displayed inside the `h1` tag;
-- `date` — should be displayed inside the `date` tag;
+- `date` — should be displayed inside the `span` tag;
 - `text` — should be displayed inside the `p` tag.
 
 The `App` renders the `Article` and passes the data from the `article` object.
