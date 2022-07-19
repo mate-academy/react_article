@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export function Article({ title, date, text }) {
   return (
@@ -9,3 +10,9 @@ export function Article({ title, date, text }) {
     </>
   );
 }
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
