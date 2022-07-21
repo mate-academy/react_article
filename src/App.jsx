@@ -11,10 +11,6 @@ const article = {
 
 export const App = () => (
   <div className="App">
-    <Article
-      title={article.title}
-      text={article.text}
-      date={article.date}
-    />
+    <Article article={article} />
   </div>
 );
