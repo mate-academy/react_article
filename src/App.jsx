@@ -12,7 +12,6 @@ const article = {
 const App = () => (
 
   <Article
-    // title="Electric-propulsion startup Orbion raises $9.2 million Series A"
     title={article.title}
     text={article.text}
     date={article.date}
