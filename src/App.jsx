@@ -12,7 +12,8 @@ const article = {
 const App = () => (
 
   <Article
-    title="Electric-propulsion startup Orbion raises $9.2 million Series A"
+    // title="Electric-propulsion startup Orbion raises $9.2 million Series A"
+    title={article.title}
     text="WASHINGTON — Orbion Space Technology announced Aug
      28 it raised a $9.2 million Series
       A round to develop and mass produce Hall-effect plasma thrusters
