@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Article } from './components/Article';
+
 // eslint-disable-next-line no-unused-vars
 const article = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
@@ -11,7 +13,10 @@ const article = {
 export const App = () => (
   <div className="App">
     <h1>React Article</h1>
-
-    {/* Add an <Article /> and pass `title`, `text` and `date` from the `article` object as props */}
+    <Article
+      title={article.title}
+      text={article.text}
+      date={article.date}
+    />
   </div>
 );
