@@ -10,8 +10,8 @@ export const Article = (props) => {
   return (
     <>
       <h1>{title}</h1>
-      <p>{text}</p>
       <span>{date}</span>
+      <p>{text}</p>
     </>
   );
 };
