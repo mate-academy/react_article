@@ -11,7 +11,6 @@ const article = {
 
 export const App = () => (
   <div className="App">
-    <h1>React Article</h1>
     <Article
       title={article.title}
       text={article.text}
