@@ -1,11 +1,9 @@
-import { kStringMaxLength } from "buffer";
-import { string } from "prop-types";
 import React from 'react';
 
 export const Article = ({
   title,
   text,
-  date
+  date,
 }) => (
   <>
     <h1>{title}</h1>
