@@ -60,4 +60,23 @@ export const Component = (props) => {
   </>
  )
 };
-``
+```
+
+3. [CODE STYLE] - Avoid putting several cases to conditional rendering. Create separate variable for the condition.
+
+BAD EXAMPLE:
+```jsx
+{listEnabled && list.length && smthElse > 0 
+  ? <ComponentOne />
+  : <ComponentTwo />}
+```
+
+
+GOOD EXAMPLE:
+```jsx
+const shouldRenderComponent = listEnabled && list.length && smthElse > 0
+
+{shouldRenderList 
+  ? <ComponentOne />
+  : <ComponentTwo />}
+```
