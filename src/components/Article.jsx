@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export function Article({ title, text, date }) {
   return (
@@ -9,3 +10,11 @@ export function Article({ title, text, date }) {
     </>
   );
 }
+
+Article.defaultProps = {
+  date: 'without date',
+};
+
+Article.propTypes = {
+  date: PropTypes.string,
+};
