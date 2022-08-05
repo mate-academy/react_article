@@ -1,1 +1,16 @@
-// style go here
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap");
+
+.App {
+  width: 80%;
+  height: 60%;
+  margin: 100px auto;
+  padding: 10px 30px;
+  background: rgb(57, 195, 130);
+  border-radius: 15px;
+
+  &-title {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: rgb(2, 43, 24);
+  }
+}
