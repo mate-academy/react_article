@@ -16,14 +16,14 @@ body {
 
 h1 {
   color: black;
-  animation: 2s slide-right;
+  animation: 2s slide-top;
 }
 
 span {
   font-style: italic;
 }
 
-@keyframes slide-right {
+@keyframes slide-top {
   from {
     margin-top: -100px;
   }
