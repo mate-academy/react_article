@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import './Article.scss';
 
 export const Article = ({
-  title = 'Title not passed',
-  text = 'Text not passed',
-  date = 'Date not passed',
+  title,
+  text,
+  date,
 }) => (
   <>
     <h1>{title}</h1>
