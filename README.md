@@ -6,6 +6,12 @@ Implement an `Article` component that accepts the following props:
 - `text` — should be displayed inside the `p` tag.
 
 The `App` renders the `Article` and passes the data from the `article` object.
+Реализуйте компонент `Article`, который принимает следующие реквизиты:
+- `title` — должен отображаться внутри тега `h1`;
+- `date` — должна отображаться внутри тега `span`;
+- `text` — должен отображаться внутри тега `p`.
+
+`App` отображает `Article` и передает данные из объекта `Article`.
 
 ## Instructions
 
