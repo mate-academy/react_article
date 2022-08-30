@@ -3,27 +3,32 @@ import { mount } from '@cypress/react';
 import { Article } from './Article';
 
 describe('Article', () => {
-  it('should render custom props', () => {
-    const title = 'title';
-    const date = 'date';
-    const text = 'Lorem';
-
-    mount(<Article title={title} date={date} text={text} />);
-
-    cy.get('h1').contains(title);
-    cy.get('span').contains(date);
-    cy.get('p').contains(text);
+  beforeEach(() => {
+    mount(
+      <Article
+        title="Some title"
+        date={new Date('2022-02-24')}
+        text="Some text"
+      />,
+    );
   });
 
-  it('should render random props', () => {
-    const title = Math.random();
-    const date = Math.random();
-    const text = Math.random();
+  it('should have a given title', () => {
+    cy.getByDataCy('title').should('have.text', 'Some title');
+  });
 
-    mount(<Article title={title} date={date} text={text} />);
+  it('should have a text date', () => {
+    cy.getByDataCy('date')
+      .should('have.text', 'February 24, 2022');
+  });
 
-    cy.get('h1').contains(title);
-    cy.get('span').contains(date);
-    cy.get('p').contains(text);
+  it('should have a date in as dateTime attribute', () => {
+    cy.getByDataCy('date')
+      .should('have.attr', 'datetime', '2022-02-24');
+  });
+
+  it('should have a given text', () => {
+    cy.getByDataCy('text')
+      .should('have.text', 'Some text');
   });
 });

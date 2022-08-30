@@ -1,11 +1,12 @@
-# React Article
+# React article
 
-Implement an `Article` component that accepts the following props:
-- `title` — should be displayed inside the `h1` tag;
-- `date` — should be displayed inside the `span` tag;
-- `text` — should be displayed inside the `p` tag.
+Implement the `Article` component that takes `title`, `date`, and `text` as props
+and render them using the given markup. The `App` should render an `Article` with
+the data from the `firstArticle` object.
 
-The `App` renders the `Article` and passes the data from the `article` object.
+- `title` is a text for `data-cy="title"`;
+- `date` should be formatted and added as a `dateTime` attribute and a content of `data-cy="date"`;
+- `text` should be rendered inside `data-cy="text"`
 
 ## Instructions
 

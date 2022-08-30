@@ -1,1 +1,1 @@
-// export function Article() {}
+// export const Article = () => ();
