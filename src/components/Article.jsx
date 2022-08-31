@@ -5,6 +5,13 @@ export function Article({
   date,
   text,
 }) {
+  const dateISO = date.toISOString().slice(0, 10);
+  const dateFormat = date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
     <>
       <div className="box">
@@ -13,12 +20,8 @@ export function Article({
         </h2>
 
         <p className="subtitle">
-          <time dateTime={date.toISOString().slice(0, 10)} data-cy="date">
-            {date.toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            })}
+          <time dateTime={dateISO} data-cy="date">
+            {dateFormat}
           </time>
         </p>
 
