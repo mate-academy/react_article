@@ -12,11 +12,9 @@ const article = {
 export const App = () => (
   <div className="App">
     <Article
-      tittle={article.title}
+      title={article.title}
       text={article.text}
       date={article.date}
     />
-
-    {/* Add an <Article /> and pass `title`, `text` and `date` from the `article` object as props */}
   </div>
 );
