@@ -17,7 +17,9 @@ export const App = () => (
 
       <div className="box">
         <Article
-          {...firstArticle}
+          title={firstArticle.title}
+          date={firstArticle.date}
+          text={firstArticle.text}
         />
       </div>
     </div>
