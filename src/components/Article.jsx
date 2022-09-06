@@ -9,20 +9,20 @@ export const Article = ({ title, date, text }) => {
   });
 
   return (
-    <div className="box">
+    <>
       <h1 className="title" data-cy="title">
         {title}
       </h1>
 
-      <p className="subtitle">
+      <span className="subtitle">
         <time dateTime={dateISO} data-cy="date">
           {dateLocaleString}
         </time>
-      </p>
+      </span>
 
       <p data-cy="text">
         {text}
       </p>
-    </div>
+    </>
   );
 };
