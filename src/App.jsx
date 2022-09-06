@@ -13,11 +13,9 @@ export const App = () => (
   <div className="section">
     <div className="container">
       <h1 className="title is-2">React Article</h1>
-      <div className="box">
         <article>
           <Article {...firstArticle} />
         </article>
-      </div>
     </div>
   </div>
 );
