@@ -11,10 +11,6 @@ export const firstArticle = {
 
 export const App = () => (
   <div className="section">
-    <Article
-      title={firstArticle.title}
-      date={firstArticle.date}
-      text={firstArticle.text}
-    />
+    <Article {...firstArticle} />
   </div>
 );
