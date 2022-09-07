@@ -13,7 +13,7 @@ export function Article({
   });
 
   return (
-    <div className="box">
+    <>
       <h2 className="title" data-cy="title">
         {title}
       </h2>
@@ -27,6 +27,6 @@ export function Article({
       <p data-cy="text">
         {text}
       </p>
-    </div>
+    </>
   );
 }
