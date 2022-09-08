@@ -15,7 +15,7 @@ export const Article = ({
   });
 
   return (
-    <>
+    <div>
       <div className="box">
         <h2 className="title" data-cy="title">
           {title}
@@ -31,6 +31,6 @@ export const Article = ({
           {text}
         </p>
       </div>
-    </>
+    </div>
   );
 };
