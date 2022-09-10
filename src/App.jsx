@@ -11,6 +11,6 @@ export const firstArticle = {
 
 export const App = () => (
   <>
-    <Article {...firstArticle} />
+    <Article article={firstArticle} />
   </>
 );
