@@ -9,6 +9,8 @@ export const Article = ({ article }) => {
     day: 'numeric',
   });
 
+  const { title, text } = article;
+
   return (
     <div className="section">
       <div className="container">
@@ -16,7 +18,7 @@ export const Article = ({ article }) => {
 
         <div className="box">
           <h2 className="title" data-cy="title">
-            {article.title}
+            {title}
           </h2>
 
           <p className="subtitle">
@@ -26,7 +28,7 @@ export const Article = ({ article }) => {
           </p>
 
           <p data-cy="text">
-            {article.text}
+            {text}
           </p>
         </div>
       </div>
