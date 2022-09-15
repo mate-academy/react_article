@@ -2,13 +2,8 @@ import React from 'react';
 
 const today = new Date();
 const dateISO = today.toISOString().slice(0, 10);
-const dateLocaleString = today.toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
 
-export const Article = ({ title, text, date = dateLocaleString }) => (
+export const Article = ({ title, text, date }) => (
   <div className="box">
     <h2 className="title" data-cy="title">
       {title}
@@ -16,7 +11,7 @@ export const Article = ({ title, text, date = dateLocaleString }) => (
 
     <p className="subtitle">
       <time dateTime={dateISO} data-cy="date">
-        {dateLocaleString}
+        {date}
       </time>
     </p>
 
