@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Article = ({ title, date, text }) => {
+export const Article = ({ article }) => {
+  const { title, date, text } = article;
+
   const dateISO = date.toISOString().slice(0, 10);
   const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
