@@ -14,12 +14,8 @@ export const App = () => (
     <div className="container">
       <h1 className="title is-2">React Article</h1>
 
-      {/* Add an <Article /> and pass `title`, `text` and `date` from the `article` object as props */}
-      <Article
-        title={firstArticle.title}
-        date={firstArticle.date}
-        text={firstArticle.text}
-      />
+      <Article {...firstArticle} />
+
     </div>
   </div>
 );
