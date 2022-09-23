@@ -12,7 +12,11 @@ export const firstArticle = {
 export const App = () => (
   <div className="section">
     <div className="container">
-      <Article {...firstArticle} />
+      <Article
+        title={firstArticle.title}
+        date={firstArticle.date}
+        text={firstArticle.text}
+      />
     </div>
   </div>
 );

@@ -1,13 +1,9 @@
 import React from 'react';
 
-export const Article = ({ title, text, date }) => {
-  const dateISO = date.toISOString().slice(0, 10);
+export const Article = ({ date, title, text }) => {
+  const dateOptions = { month: 'long', day: 'numeric', year: 'numeric' };
 
-  const dateLocaleString = date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const convertedDate = date.toLocaleDateString('en-CA', dateOptions);
 
   return (
     <>
@@ -19,8 +15,8 @@ export const Article = ({ title, text, date }) => {
         </h2>
 
         <p className="subtitle">
-          <time dateTime={dateISO} data-cy="date">
-            {dateLocaleString}
+          <time dateTime={date.toLocaleDateString('en-CA')} data-cy="date">
+            {convertedDate}
           </time>
         </p>
 
