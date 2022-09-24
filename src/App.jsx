@@ -2,7 +2,7 @@ import React from 'react';
 import 'bulma/css/bulma.css';
 import { Article } from './components/Article';
 
-export const firstArticle = {
+export const article = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
   date: new Date('2019-08-30'),
   // eslint-disable-next-line max-len
@@ -14,8 +14,11 @@ export const App = () => (
     <div className="container">
       <h1 className="title is-2">React Article</h1>
 
-      <Article {...firstArticle} />
-
+      <Article
+        title={article.title}
+        text={article.text}
+        date={article.date}
+      />
     </div>
   </div>
 );
