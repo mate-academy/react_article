@@ -1,6 +1,8 @@
 import React from 'react';
 
-export function Article({ title, date, text }) {
+export function Article({ article }) {
+  const { title, date, text } = article;
+
   return (
     <div className="box">
       <h2 className="title" data-cy="title">
