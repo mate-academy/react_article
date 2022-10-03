@@ -1,25 +1,30 @@
 import React from 'react';
 
-export const Article = ({ title, text, date }) => (
-  <div className="box">
-    <h2 className="title" data-cy="title">
-      {title}
-    </h2>
+export function Article({ props }) {
+  const { title, date, text } = props;
+  const today = date;
+  const dateISO = today.toISOString().slice(0, 10);
+  const dateLocaleString = today.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
-    <p className="subtitle">
-      <time dateTime={date} data-cy="date">
-        {
-        date.toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-        })
-        }
-      </time>
-    </p>
+  return (
+    <div className="box">
+      <h2 className="title" data-cy="title">
+        {title}
+      </h2>
 
-    <p data-cy="text">
-      {text}
-    </p>
-  </div>
-);
+      <p className="subtitle">
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleString}
+        </time>
+      </p>
+
+      <p data-cy="text">
+        {text}
+      </p>
+    </div>
+  );
+}
