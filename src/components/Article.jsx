@@ -1,4 +1,3 @@
-// export const Article = () => ();
 import React from 'react';
 
 export const Article = ({ title, date, text }) => {
