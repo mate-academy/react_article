@@ -11,7 +11,11 @@ export const App = () => (
       <h1 className="title is-2">React Article</h1>
 
       {/* Add an <Article /> and pass `title`, `text` and `date` from the `article` object as props */}
-      <Article title={title} date={date} text={text} />
+      <Article
+        title={title}
+        date={date}
+        text={text}
+      />
 
     </div>
   </div>
