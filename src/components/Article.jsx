@@ -1,15 +1,21 @@
 import React from 'react';
 
+function processDate(date) {
+  return {
+    dateISO: date.toISOString().slice(0, 10),
+    dateLocaleString: date.toLocaleDateString(
+      'en-US',
+      {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      },
+    ),
+  };
+}
+
 export const Article = ({ title, date, text }) => {
-  const dateISO = date.toISOString().slice(0, 10);
-  const dateLocaleString = date.toLocaleDateString(
-    'en-US',
-    {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    },
-  );
+  const { dateISO, dateLocaleString } = processDate(date);
 
   return (
     <div className="box">
