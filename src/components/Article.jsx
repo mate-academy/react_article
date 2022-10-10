@@ -1,26 +1,30 @@
 import React from 'react';
 
-const Article = ({ title, date, text }) => {
-  const dateISO = date.toISOString().slice(0, 10);
-  const dateLocaleString = date.toLocaleDateString('en-US', {
+export const Article = ({ article }) => {
+  const { title, text } = article;
+  const today = new Date();
+  const dataISO = today.toISOString().slice(0, 10);
+  const dateLocaleString = today.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
 
   return (
-    <>
-      <h1 data-cy="title">
+    <div className="box">
+      <h2 className="title" data-cy="title">
         {title}
-      </h1>
-      <span dateTime={dateISO} data-cy="date">
-        {dateLocaleString}
-      </span>
+      </h2>
+
+      <p className="subtitle">
+        <time dataTime={dataISO} data-cy="date">
+          {dateLocaleString}
+        </time>
+      </p>
+
       <p data-cy="text">
         {text}
       </p>
-    </>
+    </div>
   );
 };
-
-export default Article;
