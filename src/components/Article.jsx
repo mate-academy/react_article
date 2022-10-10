@@ -1,10 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Article = ({ article }) => {
-  const { title, text } = article;
-  const today = new Date();
-  const dataISO = today.toISOString().slice(0, 10);
-  const dateLocaleString = today.toLocaleDateString('en-US', {
+export const Article = ({
+  title,
+  date,
+  text,
+}) => {
+  const dateISO = date.toISOString().slice(0, 10);
+  const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -17,7 +20,7 @@ export const Article = ({ article }) => {
       </h2>
 
       <p className="subtitle">
-        <time dataTime={dataISO} data-cy="date">
+        <time dateTime={dateISO} data-cy="date">
           {dateLocaleString}
         </time>
       </p>
@@ -27,4 +30,10 @@ export const Article = ({ article }) => {
       </p>
     </div>
   );
+};
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
