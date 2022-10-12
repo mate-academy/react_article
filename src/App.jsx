@@ -6,7 +6,7 @@ import { firstArticle } from './components/firstArticle';
 const {
   title,
   date,
-  text
+  text,
 } = firstArticle;
 
 export const App = () => (
