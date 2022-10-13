@@ -18,7 +18,7 @@ export const Article = ({ title, date, text }) => {
           dateTime={date.toISOString().slice(0, 10)}
           data-cy="date"
         >
-          {dateString}
+          { dateString }
         </time>
       </p>
 
