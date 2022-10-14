@@ -7,6 +7,8 @@ export const Article = ({ title, date, text }) => {
     day: 'numeric',
   });
 
+  const dateTimeString = date.toISOString().slice(0, 10);
+
   return (
     <div className="box">
       <h2 className="title" data-cy="title">
@@ -15,7 +17,7 @@ export const Article = ({ title, date, text }) => {
 
       <p className="subtitle">
         <time
-          dateTime={date.toISOString().slice(0, 10)}
+          dateTime={dateTimeString}
           data-cy="date"
         >
           { dateString }
