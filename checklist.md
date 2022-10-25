@@ -42,7 +42,7 @@ export const Component = ({
 );
 ```
 
-ALSO GOOD EXAMPLE: 
+ALSO GOOD EXAMPLE:
 
 ```jsx
 export const Component = (props) => {
@@ -50,7 +50,7 @@ export const Component = (props) => {
   firstProperty,
   secondProperty,
   thirdProperty
-} = props; 
+} = props;
 
  return (
   <>
