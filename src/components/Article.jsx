@@ -4,24 +4,29 @@ export const Article = ({
   title,
   date,
   text,
-}) => (
-  <div className="box">
-    <h2 className="title" data-cy="title">
-      {title}
-    </h2>
+}) => {
+  const dateISO = date.toISOString().slice(0, 10);
+  const dateLocaleString = date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
-    <p className="subtitle">
-      <time dateTime={date.toISOString().slice(0, 10)} data-cy="date">
-        {date.toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-        })}
-      </time>
-    </p>
+  return (
+    <div className="box">
+      <h2 className="title" data-cy="title">
+        {title}
+      </h2>
 
-    <p data-cy="text">
-      {text}
-    </p>
-  </div>
-);
+      <p className="subtitle">
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleString}
+        </time>
+      </p>
+
+      <p data-cy="text">
+        {text}
+      </p>
+    </div>
+  );
+};
