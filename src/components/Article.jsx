@@ -2,13 +2,13 @@ import React from 'react';
 
 export const Article = ({ title, text, date }) => (
   <div>
-    <h1>
+    <h1 data-cy="title">
       {`${title}`}
     </h1>
-    <span>
+    <span data-cy="date">
       {`${date}`}
     </span>
-    <p>
+    <p data-cy="text">
       {`${text}`}
     </p>
   </div>
