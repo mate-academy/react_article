@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Article = ({ title, date, text }) => (
   <div className="box">
@@ -21,3 +22,9 @@ export const Article = ({ title, date, text }) => (
     </p>
   </div>
 );
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
