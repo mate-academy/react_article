@@ -1,9 +1,8 @@
 import React from 'react';
 
-export const Article = ({ props }) => {
-  const { title, text } = props;
-
-  const today = new Date();
+export const Article = ({ title, text, date }) => {
+  
+  const today = new Date(date);
   const dateISO = today.toISOString().slice(0, 10);
   const dateLocaleString = today.toLocaleDateString('en-US', {
     year: 'numeric',
