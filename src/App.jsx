@@ -11,6 +11,10 @@ export const firstArticle = {
 
 export const App = () => (
   <div className="section">
-    <Article {...firstArticle} />
+    <div className="container">
+      <h1 className="title is-2">React Article</h1>
+
+      <Article {...firstArticle} />
+    </div>
   </div>
 );
