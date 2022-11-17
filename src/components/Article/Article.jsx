@@ -1,8 +1,14 @@
 import React from 'react';
 import { Date } from '../Date';
 
-export function Article({ title, date, text }) {
-  const attrNames = Object.keys({ title, date, text });
+export function Article({ article }) {
+  const {
+    title,
+    date,
+    text,
+  } = article;
+
+  const attrNames = Object.keys(article);
 
   return (
     <div className="box">
