@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Article = (props) => {
   const {
@@ -24,4 +25,10 @@ export const Article = (props) => {
       <p data-cy="text">{text}</p>
     </>
   );
+};
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.number.isRequired,
+  text: PropTypes.string.isRequired,
 };
