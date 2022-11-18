@@ -1,4 +1,5 @@
 import React from 'react';
+import { Article } from './components/Article';
 import 'bulma/css/bulma.css';
 
 export const firstArticle = {
@@ -16,12 +17,24 @@ const dateLocaleString = today.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
+const dateISOFA = firstArticle.date.toISOString().slice(0, 10);
+const dateLocaleStringFA = firstArticle.date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
 export const App = () => (
   <div className="section">
     <div className="container">
       <h1 className="title is-2">React Article</h1>
 
-      {/* Add an <Article /> and pass `title`, `text` and `date` from the `article` object as props */}
+      <Article
+        title={firstArticle.title}
+        dateISOFA={dateISOFA}
+        dateLocaleStringFA={dateLocaleStringFA}
+        text={firstArticle.text}
+      />
       <div className="box">
         <h2 className="title" data-cy="title">
           Put title here
