@@ -17,23 +17,13 @@ const dateLocaleString = today.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
-const dateISOFA = firstArticle.date.toISOString().slice(0, 10);
-const dateLocaleStringFA = firstArticle.date.toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
-
 export const App = () => (
   <div className="section">
     <div className="container">
       <h1 className="title is-2">React Article</h1>
 
       <Article
-        title={firstArticle.title}
-        dateISOFA={dateISOFA}
-        dateLocaleStringFA={dateLocaleStringFA}
-        text={firstArticle.text}
+        article={firstArticle}
       />
       <div className="box">
         <h2 className="title" data-cy="title">
