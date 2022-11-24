@@ -19,23 +19,6 @@ export const App = () => (
         date={firstArticle.date}
         text={firstArticle.text}
       />
-      {/* <div className="box">
-        <h2 className="title" data-cy="title">
-          Put title here
-        </h2>
-
-        <p className="subtitle">
-          <time dateTime={dateISO} data-cy="date">
-            {dateLocaleString}
-          </time>
-        </p>
-
-        <p data-cy="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          assumenda magni adipisci esse quidem ratione ipsa labore vero illo
-          optio.
-        </p>
-      </div> */}
     </div>
   </div>
 );
