@@ -14,11 +14,13 @@ export const Article = (props) => {
       <h2 className="title" data-cy="title">
         {title}
       </h2>
+
       <p className="subtitle">
         <time dateTime={isoDate} data-cy="date">
           {dateLocaleString}
         </time>
       </p>
+
       <p data-cy="text">
         {text}
       </p>
