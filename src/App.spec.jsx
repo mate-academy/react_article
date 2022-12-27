@@ -16,7 +16,7 @@ describe('App', () => {
   it('should have a correct title', () => {
     cy.getByDataCy('title').should(
       'have.text',
-      'Electric-propulsion startup Orbion raises $9.2 million Series A'
+      'Electric-propulsion startup Orbion raises $9.2 million Series A',
     );
   });
 
