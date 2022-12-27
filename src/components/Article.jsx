@@ -7,6 +7,13 @@ export const Article = (props) => {
     text,
   } = props;
 
+  const dateISO = date.toISOString().slice(0, 10);
+  const dateLocaleString = date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
     <>
       <h2 className="title" data-cy="title">
@@ -14,12 +21,8 @@ export const Article = (props) => {
       </h2>
 
       <p className="subtitle">
-        <time dateTime={date.toISOString().slice(0, 10)} data-cy="date">
-          {date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })}
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleString}
         </time>
       </p>
 
