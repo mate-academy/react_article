@@ -13,21 +13,19 @@ export const Article = ({
   });
 
   return (
-    <>
-      <div className="box">
-        <h2 className="title" data-cy="title">
-          {title}
-        </h2>
-        <p className="subtitle">
-          <time dateTime={dateISO} data-cy="date">
-            {dateLocaleString}
-          </time>
-        </p>
+    <div className="box">
+      <h2 className="title" data-cy="title">
+        {title}
+      </h2>
+      <p className="subtitle">
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleString}
+        </time>
+      </p>
 
-        <p data-cy="text">
-          {text}
-        </p>
-      </div>
-    </>
+      <p data-cy="text">
+        {text}
+      </p>
+    </div>
   );
 };
