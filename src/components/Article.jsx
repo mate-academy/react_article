@@ -1,6 +1,11 @@
 import React from 'react';
 
-export const Article = ({ title, date, text }) => (
+export const Article = ({
+  title,
+  date,
+  text,
+}) => (
+
   <div className="box">
     <h2 className="title" data-cy="title">
       {title}
