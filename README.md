@@ -11,7 +11,7 @@ it in the initial code):
     <time datetime="2022-09-08" data-cy="date">
       September 8, 2022
     </time>
-    ```
+    ````
 - `text` should be rendered inside `data-cy="text"`
 
 ## Instructions
