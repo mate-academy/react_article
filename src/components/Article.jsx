@@ -1,11 +1,7 @@
-
 import React from 'react';
 
-export const Article = ({
-  title,
-  date,
-  text,
-}) => {
+export const Article = ({ article }) => {
+  const { title, date, text } = article;
   const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
