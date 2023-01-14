@@ -30,6 +30,6 @@ export const Article = ({ title, date, text }) => {
 
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.objectOf(PropTypes.string).isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
   text: PropTypes.string.isRequired,
 };
