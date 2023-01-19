@@ -1,6 +1,13 @@
 import React from 'react';
 
-function Article({ title, date, text }) {
+export function Article({ title, date, text }) {
+  const dateISO = date.toISOString().slice(0, 10);
+  const dateLocaleString = date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
     <div className="box">
       <h2 className="title" data-cy="title">
@@ -8,12 +15,8 @@ function Article({ title, date, text }) {
       </h2>
 
       <p className="subtitle">
-        <time dateTime={date} data-cy="date">
-          {date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })}
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleString}
         </time>
       </p>
 
@@ -23,5 +26,3 @@ function Article({ title, date, text }) {
     </div>
   );
 }
-
-export default Article;
