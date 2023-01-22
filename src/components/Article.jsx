@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 export const Article = ({ title, date, text }) => {
   const dateISO = date.toISOString().slice(0, 10);
   const dateLocaleString = date.toLocaleDateString('en-US', {
@@ -25,4 +27,17 @@ export const Article = ({ title, date, text }) => {
       </p>
     </div>
   );
+};
+
+Article.defaultProps = {
+  title: '*Here should be an article title*',
+  date: '*Here should be a date*',
+  text: '*Here should be a text*',
+};
+Article.propTypes = {
+  title: PropTypes.string,
+  date: PropTypes.shape({
+    date: PropTypes.string,
+  }),
+  text: PropTypes.string,
 };
