@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Article = ({
   title,
@@ -29,4 +30,16 @@ export const Article = ({
       </p>
     </div>
   );
+};
+
+Article.defaultProps = {
+  title: 'Default title',
+  text: 'Default text',
+  date: '2019-08-30',
+};
+
+Article.propTypes = {
+  title: PropTypes.string,
+  text: PropTypes.string,
+  date: PropTypes.string,
 };
