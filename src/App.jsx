@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
+import PropTypes from 'prop-types';
 import { Article } from './components/Article';
 
 export const firstArticle = {
@@ -21,3 +22,14 @@ export const App = () => (
     </div>
   </div>
 );
+
+Article.defaultProps = {
+  title: 'Title',
+  date: new Date(),
+  text: 'Description',
+};
+Article.PropTypes = {
+  title: PropTypes.string,
+  date: PropTypes.instanceOf(Date),
+  text: PropTypes.string,
+};
