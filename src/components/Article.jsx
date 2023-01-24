@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export function Article({
   title,
@@ -30,3 +31,16 @@ export function Article({
     </div>
   );
 }
+
+// eslint-disable-next-line react/no-typos
+Article.PropTypes = {
+  title: PropTypes.string,
+  date: PropTypes.instanceOf(Date),
+  text: PropTypes.string,
+};
+
+Article.defaultProps = {
+  title: 'Title',
+  date: new Date(),
+  text: 'No article',
+};
