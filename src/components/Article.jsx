@@ -32,8 +32,8 @@ export const Article = ({
   );
 };
 
-Article.PropTypes = {
+Article.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.number.isRequired,
+  date: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
