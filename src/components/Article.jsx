@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export function Article({ title, date, text }) {
   const dateISO = date.toISOString().slice(0, 10);
@@ -26,3 +27,9 @@ export function Article({ title, date, text }) {
     </div>
   );
 }
+
+Article.propTypes = {
+  title: PropTypes.string.isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
+  text: PropTypes.string.isRequired,
+};
