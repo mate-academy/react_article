@@ -1,6 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Article = ({ title, text, date }) => {
+export const Article = ({
+  title,
+  text,
+  date,
+}) => {
   const dateISO = date.toISOString().slice(0, 10);
   const dateLocaleString = date.toLocaleString('en-US', {
     year: 'numeric',
@@ -25,4 +30,16 @@ export const Article = ({ title, text, date }) => {
       </p>
     </div>
   );
+};
+
+Article.defaultProps = {
+  title: 'Title',
+  date: new Date(),
+  text: 'Description',
+};
+
+Article.propTypes = {
+  title: PropTypes.string,
+  date: PropTypes.instanceOf(Date),
+  text: PropTypes.string,
 };
