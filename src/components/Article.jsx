@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export function Article({ title, date, text }) {
   const dateISO = date.toISOString().slice(0, 10);
@@ -26,3 +27,15 @@ export function Article({ title, date, text }) {
     </div>
   );
 }
+
+Article.defaultProps = {
+  title: 'Title',
+  date: new Date(),
+  text: 'Some text',
+};
+
+Article.propTypes = {
+  title: PropTypes.string,
+  date: PropTypes.instanceOf(Date),
+  text: PropTypes.string,
+};
