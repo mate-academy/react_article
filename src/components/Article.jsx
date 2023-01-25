@@ -2,9 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Article = ({ title, date, text }) => {
-  const today = date;
-  const dateISO = today.toISOString().slice(0, 10);
-  const dateLocaleString = today.toLocaleDateString('en-US', {
+  const dateISO = date.toISOString().slice(0, 10);
+  const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -31,8 +30,6 @@ export const Article = ({ title, date, text }) => {
 
 Article.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.shape({
-    date: PropTypes.string,
-  }).isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
   text: PropTypes.string.isRequired,
 };
