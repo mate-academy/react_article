@@ -3,6 +3,7 @@
 import React from 'react';
 import { mount } from '@cypress/react';
 import { App } from './App';
+// import Article from './components/Article';
 
 describe('App', () => {
   beforeEach(() => {
