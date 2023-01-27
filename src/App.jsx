@@ -23,8 +23,11 @@ export const App = () => (
       <h1 className="title is-2">React Article</h1>
       <Article
         title={firstArticle.title}
-        datetime={dateISO}
-        date={dateLocaleString}
+        date={{
+          dateISO,
+          dateLocaleString,
+        }
+        }
         text={firstArticle.text}
       />
     </div>

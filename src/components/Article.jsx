@@ -1,19 +1,19 @@
 import React from 'react';
 
-export const Article = props => (
+export const Article = ({ title, date, text }) => (
   <div className="box">
     <h2 className="title" data-cy="title">
-      {props.title}
+      {title}
     </h2>
 
     <p className="subtitle">
-      <time dateTime={props.datetime} data-cy="date">
-        {props.date}
+      <time dateTime={date.dateISO} data-cy="date">
+        {date.dateLocaleString}
       </time>
     </p>
 
     <p data-cy="text">
-      {props.text}
+      {text}
     </p>
   </div>
 );
