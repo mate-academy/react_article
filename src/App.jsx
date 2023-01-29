@@ -13,15 +13,11 @@ export const App = () => (
   <div className="section">
     <div className="container">
       <h1 className="title is-2">React Article</h1>
-
-      {/* Add an <Article /> and pass `title`, `text` and `date` from the `article` object as props */}
-      <div className="box">
-        <Article
-          title={firstArticle.title}
-          date={firstArticle.date}
-          text={firstArticle.text}
-        />
-      </div>
+      <Article
+        title={firstArticle.title}
+        date={firstArticle.date}
+        text={firstArticle.text}
+      />
     </div>
   </div>
 );

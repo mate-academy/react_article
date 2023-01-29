@@ -1,4 +1,3 @@
-// export const Article = () => ();
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -15,7 +14,7 @@ export const Article = ({
   });
 
   return (
-    <>
+    <div className="box">
       <h2 className="title" data-cy="title">
         {title}
       </h2>
@@ -29,7 +28,7 @@ export const Article = ({
       <p data-cy="text">
         {text}
       </p>
-    </>
+    </div>
   );
 };
 
