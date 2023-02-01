@@ -1,10 +1,18 @@
 import React from 'react';
 
-export const Article = ({ firstArticle, dateISO, dateLocaleString }) => (
-  <>
+export const Article = ({ title, date, text }) => {
+  const today = date;
+  const dateISO = today.toISOString().slice(0, 10);
+  const dateLocaleString = today.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  return (
     <div className="box">
       <h2 className="title" data-cy="title">
-        {firstArticle.title}
+        {title}
       </h2>
 
       <p className="subtitle">
@@ -14,8 +22,8 @@ export const Article = ({ firstArticle, dateISO, dateLocaleString }) => (
       </p>
 
       <p data-cy="text">
-        {firstArticle.text}
+        {text}
       </p>
     </div>
-  </>
-);
+  );
+};
