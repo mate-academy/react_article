@@ -1,13 +1,12 @@
 // export const Article = () => ();
-import React from 'react';
+import React from "react";
 
-export const Article = ({ article }) => {
-  const { title, text, date } = article;
+export const Article = ({ title, text, date }) => {
   const dateISO = date.toISOString().slice(0, 10);
-  const dateLocaleString = date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+  const dateLocaleString = date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
 
   return (
