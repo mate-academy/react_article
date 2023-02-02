@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 
 export const Article = ({ title, date, text }) => {
   const setDate = date.toISOString().slice(0, 10);
+  const readDate = date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   return (
     <div className="box">
@@ -12,12 +17,7 @@ export const Article = ({ title, date, text }) => {
 
       <p className="subtitle">
         <time dateTime={setDate} data-cy="date">
-          {date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })
-          }
+          {readDate }
         </time>
       </p>
 
