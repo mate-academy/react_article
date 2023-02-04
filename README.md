@@ -5,7 +5,13 @@ and render them using the given markup. The `App` should render an `Article` wit
 the data from the `firstArticle` object.
 
 - `title` is a text for `data-cy="title"`;
-- `date` should be formatted and added as a `dateTime` attribute and a content of `data-cy="date"`;
+- `date` should be added in the next format, (you have an example of how to do
+it in the initial code):
+    ```tsx
+    <time datetime="2022-09-08" data-cy="date">
+      September 8, 2022
+    </time>
+    ```
 - `text` should be rendered inside `data-cy="text"`
 
 ## Instructions
