@@ -1,11 +1,16 @@
 import React from 'react';
 
-export const Article = ({ title, date, text }) => {
+export const Article = ({
+  title,
+  date,
+  text,
+}) => {
   const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
+  const dataShort = date.toISOString().slice(0, 10);
 
   return (
     <div className="box">
@@ -14,7 +19,7 @@ export const Article = ({ title, date, text }) => {
       </h2>
 
       <p className="subtitle">
-        <time dateTime={date.toISOString().slice(0, 10)} data-cy="date">
+        <time dateTime={dataShort} data-cy="date">
           {dateLocaleString}
         </time>
       </p>
