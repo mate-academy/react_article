@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Article = ({ title, date, text }) => {
+export const Article = ({ firstArticle }) => {
+  const { title, date, text } = firstArticle;
   const dateISO = date.toISOString().slice(0, 10);
   const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
@@ -25,4 +27,19 @@ export const Article = ({ title, date, text }) => {
       </p>
     </div>
   );
+};
+
+Article.defaultProps = {
+  firstArticle: {
+    date: null,
+    text: '',
+  },
+};
+
+Article.propTypes = {
+  firstArticle: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    date: PropTypes.number,
+    text: PropTypes.string,
+  }),
 };
