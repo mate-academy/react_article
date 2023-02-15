@@ -3,7 +3,7 @@ import 'bulma/css/bulma.css';
 
 import { Article } from './components/Article';
 
-export const firstArticle = {
+const firstArticle = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
   date: new Date('2019-08-30'),
   // eslint-disable-next-line max-len
