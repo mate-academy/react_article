@@ -2,10 +2,10 @@ import React from 'react';
 
 export const Article = ({
   title,
-  data,
+  date,
   text,
 }) => {
-  const today = new Date();
+  const today = date || new Date();
   const dateISO = today.toISOString().slice(0, 10);
   const dateLocaleString = today.toLocaleDateString('en-US', {
     year: 'numeric',

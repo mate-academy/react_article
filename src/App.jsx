@@ -13,11 +13,7 @@ export const App = () => (
   <div className="section">
     <div className="container">
       <h1 className="title is-2">React Article</h1>
-      <Article
-        title={firstArticle.title}
-        data={firstArticle.data}
-        text={firstArticle.text}
-      />
+      <Article { ...firstArticle}/>
     </div>
   </div>
 );
