@@ -1,13 +1,19 @@
-import React from "react";
+import React from 'react';
 
-export const Article = ({ title, date, text }) => {
+function calculateDate(date) {
   const today = new Date(date);
   const dateISO = today.toISOString().slice(0, 10);
-  const dateLocaleString = today.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+  const dateLocaleString = today.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
   });
+
+  return [dateISO, dateLocaleString];
+}
+
+export const Article = ({ title, date, text }) => {
+  const [dateISO, dateLocaleString] = calculateDate(date);
 
   return (
     <div className="box">
