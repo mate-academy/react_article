@@ -1,5 +1,7 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
+import { title } from 'process';
+import { Article } from './components/Article';
 
 export const firstArticle = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
@@ -20,25 +22,7 @@ export const App = () => (
   <div className="section">
     <div className="container">
       <h1 className="title is-2">React Article</h1>
-
-      {/* Add an <Article /> and pass `title`, `text` and `date` from the `article` object as props */}
-      <div className="box">
-        <h2 className="title" data-cy="title">
-          Put title here
-        </h2>
-
-        <p className="subtitle">
-          <time dateTime={dateISO} data-cy="date">
-            {dateLocaleString}
-          </time>
-        </p>
-
-        <p data-cy="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          assumenda magni adipisci esse quidem ratione ipsa labore vero illo
-          optio.
-        </p>
-      </div>
+      <Article {...firstArticle} />
     </div>
   </div>
 );
