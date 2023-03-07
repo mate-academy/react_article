@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Article = ({
-  title,
+  title = '',
   date = new Date(),
   text,
 }) => {
