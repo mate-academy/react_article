@@ -1,5 +1,3 @@
-'use srict';
-
 export const getDateISO = date => (
   date.toISOString().slice(0, 10)
 );

@@ -1,8 +1,11 @@
 import React from 'react';
-import 'bulma/css/bulma.css';
 import { getDateISO, getLocaleDate } from '../functions/dateFormat';
 
-export const Article = ({ title, date = new Date(), text }) => (
+export const Article = ({
+  title,
+  date,
+  text,
+}) => (
   <div className="box">
     <h2 className="title" data-cy="title">
       {title}
