@@ -14,7 +14,9 @@ export const Article = ({
 
   return (
     <>
-      <h1 className="title is-2">React Article</h1>
+      <h1 className="title is-2">
+        React Article
+      </h1>
       <div className="box">
         <h2 className="title" data-cy="title">
           {title}
