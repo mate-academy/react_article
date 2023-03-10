@@ -13,9 +13,7 @@ export const App = () => (
   <div className="section">
     <div className="container">
       <Article
-        title={firstArticle.title}
-        date={firstArticle.date}
-        text={firstArticle.text}
+        {...firstArticle}
       />
     </div>
   </div>
