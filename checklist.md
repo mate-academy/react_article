@@ -1,4 +1,4 @@
-1. [CODE STYLE] - If you have 3 or more attribues on a tag, write each attribute in the new line (to make it easier to write and read).
+  1. [CODE STYLE] - If you have 3 or more attribues on a tag, write each attribute in the new line (to make it easier to write and read).
 
 BAD EXAMPLE:
 ```jsx
@@ -42,7 +42,7 @@ export const Component = ({
 );
 ```
 
-ALSO GOOD EXAMPLE: 
+ALSO GOOD EXAMPLE:
 
 ```jsx
 export const Component = (props) => {
@@ -50,7 +50,7 @@ export const Component = (props) => {
   firstProperty,
   secondProperty,
   thirdProperty
-} = props; 
+} = props;
 
  return (
   <>
