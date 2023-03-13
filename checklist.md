@@ -50,7 +50,7 @@ export const Component = (props) => {
   firstProperty,
   secondProperty,
   thirdProperty
-} = props; 
+ } = props; 
 
  return (
   <>
