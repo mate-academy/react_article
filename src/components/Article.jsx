@@ -10,8 +10,6 @@ export const Article = ({ title, date, text }) => {
 
   return (
     <>
-      <h1 className="title is-2">React Article</h1>
-
       <div className="box">
         <h2 className="title" data-cy="title">
           {title}
