@@ -1,10 +1,6 @@
 import React from 'react';
 
-export const Article = (
-  { title,
-    date,
-    text },
-) => {
+export const Article = ({ title, date, text }) => {
   const dateISO = date.toISOString().slice(0, 10);
   const dateToLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
@@ -24,7 +20,9 @@ export const Article = (
         </time>
       </p>
 
-      <p data-cy="text">{text}</p>
+      <p data-cy="text">
+        {text}
+      </p>
     </div>
   );
 };
