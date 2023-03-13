@@ -34,11 +34,11 @@ export const Article = (props) => {
         </p>
       </div>
     </>
-  )
+  );
 };
 
 Article.PropTypes = {
   title: PropTypes.string.isRequired,
   data: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-}
+};
