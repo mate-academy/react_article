@@ -6,7 +6,7 @@ export const Article = ({
   date,
   text,
 }) => (
-  <div className="box">
+  <article className="box">
     <h2 className="title" data-cy="title">
       {title}
     </h2>
@@ -20,5 +20,5 @@ export const Article = ({
     <p data-cy="text">
       {text}
     </p>
-  </div>
+  </article>
 );
