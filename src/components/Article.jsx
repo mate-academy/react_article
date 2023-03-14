@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Article = ({ title, text }) => (
+const Article = ({ title, text }) => (
   <div className="box">
     <h2 className="title" data-cy="title">
       {title}
