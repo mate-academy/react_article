@@ -6,7 +6,7 @@ export const Article = ({ title, text }) => (
       {title}
     </h2>
     <time dateTime="2019-08-30" data-cy="date">
-      September 8, 2022
+      September 8, 2023
     </time>
     <p data-cy="text">
       {text}
