@@ -5,7 +5,7 @@ export const Article = ({ title, date, text }) => {
   const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
-    data: 'numeric',
+    day: 'numeric',
   });
 
   return (
