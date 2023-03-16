@@ -6,7 +6,9 @@ const Article = ({ title, text, date }) => (
       {title}
     </h2>
     <time dateTime="2019-08-30" data-cy="date">
-      {date.toString()}
+      {date.toLocaleDateString('en-US', { year: 'numeric',
+        month: 'long',
+        day: 'numeric' })}
     </time>
     <p data-cy="text">
       {text}
