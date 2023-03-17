@@ -1,19 +1,23 @@
 import React from 'react';
 
-const Article = ({ title, text, date }) => (
-  <div className="box">
-    <h2 className="title" data-cy="title">
-      {title}
-    </h2>
-    <time dateTime="2019-08-30" data-cy="date">
-      {date.toLocaleDateString('en-US', { year: 'numeric',
-        month: 'long',
-        day: 'numeric' })}
-    </time>
-    <p data-cy="text">
-      {text}
-    </p>
-  </div>
+export const Article = ({ title,
+  text,
+  date,
+  dateISO = date.toISOString().slice(0, 10),
+  dateLocaleString = date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }) }) => (
+    <div className="box">
+      <h2 className="title" data-cy="title">
+        {title}
+      </h2>
+      <time dateTime={dateISO} data-cy="date">
+        {dateLocaleString}
+      </time>
+      <p data-cy="text">
+        {text}
+      </p>
+    </div>
 );
-
-export default Article;
