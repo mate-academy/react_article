@@ -1,14 +1,14 @@
 import React from 'react';
 
-export const Article = ({ title,
-  text,
-  date,
-  dateISO = date.toISOString().slice(0, 10),
-  dateLocaleString = date.toLocaleDateString('en-US', {
+export const Article = ({ title, text, date }) => {
+  const dateISO = date.toISOString().slice(0, 10);
+  const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }) }) => (
+  });
+
+  return (
     <div className="box">
       <h2 className="title" data-cy="title">
         {title}
@@ -20,4 +20,5 @@ export const Article = ({ title,
         {text}
       </p>
     </div>
-);
+  );
+};
