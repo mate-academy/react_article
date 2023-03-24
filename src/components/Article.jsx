@@ -1,5 +1,4 @@
 import React from 'react';
-// import { firstArticle } from '../App';
 
 export const Article = ({ title, date, text }) => (
   <>
