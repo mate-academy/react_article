@@ -3,9 +3,9 @@ import React from 'react';
 
 export const Article = ({ title, date, text }) => (
   <>
-    <article>{title}</article>
-    <article>{date}</article>
-    <article>{text}</article>
+    <h2>{title}</h2>
+    <p>{date}</p>
+    <p>{text}</p>
   </>
 );
 
