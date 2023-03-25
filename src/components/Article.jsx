@@ -11,7 +11,7 @@ export const Article = ({ title, date, text }) => {
   return (
     <div className="box">
       <h2 className="title" data-cy="title">
-        {Article.title}
+        {title}
       </h2>
 
       <p className="subtitle">
@@ -21,7 +21,7 @@ export const Article = ({ title, date, text }) => {
       </p>
 
       <p data-cy="text">
-        {Article.text}
+        {text}
       </p>
     </div>
   );
