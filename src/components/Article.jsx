@@ -1,24 +1,23 @@
 import React from 'react';
 
-const today = new Date();
+export const Article = ({ title, date, text }) => {
+  const dateISO = date.toISOString().slice(0, 10);
 
-const dateISO = today.toISOString().slice(0, 10);
+  const dateLocaleString = date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
-const dateLocaleString = today.toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
-
-export const Article = ({ title, date, text }) => (
-  <>
+  return (
     <article>
-      <p className="title" data-cy="title">{title}</p>
-      <p dateTime={dateISO} className="subtitle" data-cy="date">
-        {date.toISOString()}
+      <h2 className="title" data-cy="title">{title}</h2>
+      <p className="subtitle">
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleString}
+        </time>
       </p>
-      <p>{dateLocaleString}</p>
       <p data-cy="text">{text}</p>
-    </article>
-  </>
-);
+      </article>
+  )
+};
