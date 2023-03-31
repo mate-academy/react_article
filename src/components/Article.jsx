@@ -23,7 +23,6 @@ export const Article = ({
       <p className="subtitle">
         <time dateTime={dateISO} data-cy="date">
           {dateLocaleString}
-          {date}
         </time>
       </p>
 
