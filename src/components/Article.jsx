@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 export const Article = ({
   title,
-  text,
   date,
+  text,
 }) => {
   const today = new Date();
   const dateISO = today.toISOString().slice(0, 10);
@@ -23,6 +23,7 @@ export const Article = ({
       <p className="subtitle">
         <time dateTime={dateISO} data-cy="date">
           {dateLocaleString}
+          {date}
         </time>
       </p>
 
