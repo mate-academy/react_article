@@ -35,8 +35,8 @@ Article.defaultProps = {
   text: '',
 };
 
-Article.prototype = {
+Article.propTypes = {
   title: PropTypes.string,
-  date: PropTypes.object,
+  date: PropTypes.instanceOf(Date),
   text: PropTypes.string,
 };
