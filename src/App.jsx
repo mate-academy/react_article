@@ -10,7 +10,6 @@ export const firstArticle = {
 };
 
 export const App = () => (
-  <>
     <div className="section">
       <div className="container">
         <h1 className="title is-2">React Article</h1>
@@ -21,5 +20,4 @@ export const App = () => (
         />
       </div>
     </div>
-  </>
 );
