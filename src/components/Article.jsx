@@ -2,11 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Article = ({
-  article: {
-    title,
-    date,
-    text,
-  },
+  title,
+  date,
+  text,
 }) => {
   const dateISO = date.toISOString().slice(0, 10);
   const dateLocaleString = date.toLocaleDateString('en-US', {
@@ -28,7 +26,7 @@ export const Article = ({
       </p>
 
       <p data-cy="text">
-        { text }
+        {text}
       </p>
     </div>
   );
