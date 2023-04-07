@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const Article = ({ title, date, text }) => {
-  const dateISO = date.toISOString().slice(0, 10);
-  const dateLocaleString = date.toLocaleDateString('en-US', {
+export const Article = ({ article }) => {
+  const dateISO = article.date.toISOString().slice(0, 10);
+  const dateLocaleString = article.date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -11,7 +11,7 @@ export const Article = ({ title, date, text }) => {
   return (
     <div className="box">
       <h2 className="title" data-cy="title">
-        {title}
+        {article.title}
       </h2>
 
       <p className="subtitle">
@@ -21,7 +21,7 @@ export const Article = ({ title, date, text }) => {
       </p>
 
       <p data-cy="text">
-        {text}
+        {article.text}
       </p>
     </div>
   );
