@@ -9,14 +9,16 @@ export const Article = ({ title, text, date }) => {
   });
 
   return (
-    <>
-      <h2 data-cy="title">{title}</h2>
-
-      <time dateTime={dateISO} data-cy="date">
-        {dateLocaleString}
-      </time>
-
+    <div className="box">
+      <h2 className="title" data-cy="title">
+        {title}
+      </h2>
+      <p className="subtitle">
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleString}
+        </time>
+      </p>
       <p data-cy="text">{text}</p>
-    </>
+    </div>
   );
 };
