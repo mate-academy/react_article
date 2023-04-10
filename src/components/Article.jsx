@@ -28,4 +28,4 @@ function Article({ title, text, date }) {
   );
 }
 
-export default Article;
+export { Article };
