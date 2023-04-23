@@ -15,9 +15,7 @@ export const App = () => (
       <h1 className="title is-2">React Article</h1>
 
       <Article
-        title={firstArticle.title}
-        text={firstArticle.text}
-        date={firstArticle.date}
+        article={firstArticle}
       />
     </div>
   </div>
