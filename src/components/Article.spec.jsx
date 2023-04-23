@@ -7,7 +7,7 @@ describe('Article', () => {
     mount(
       <Article
         title="Some title"
-        date={new Date('2022-02-24')}
+        date={new Date('2022-02-24T00:00:00')}
         text="Some text"
       />,
     );
