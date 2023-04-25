@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import { Article } from './components/Article';
+import Article from './components/Article';
 
 export const firstArticle = {
   title: 'Electric-propulsion startup Orbion raises $9.2 million Series A',
