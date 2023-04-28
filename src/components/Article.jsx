@@ -1,4 +1,5 @@
-/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
+
 export const Article = ({ title, date, text }) => {
   const dateISO = date.toISOString().slice(0, 10);
   const dateLocaleString = date.toLocaleDateString('en-US', {
@@ -8,28 +9,26 @@ export const Article = ({ title, date, text }) => {
   });
 
   return (
-    <>
-      <div className="section">
-        <div className="container">
-          <h1 className="title is-2">{title}</h1>
+    <div className="section">
+      <div className="container">
+        <h1 className="title is-2">{title}</h1>
 
-          <div className="box">
-            <h2 className="title" data-cy="title">
-              {title}
-            </h2>
+        <div className="box">
+          <h2 className="title" data-cy="title">
+            {title}
+          </h2>
 
-            <p className="subtitle">
-              <time dateTime={dateISO} data-cy="date">
-                {dateLocaleString}
-              </time>
-            </p>
+          <p className="subtitle">
+            <time dateTime={dateISO} data-cy="date">
+              {dateLocaleString}
+            </time>
+          </p>
 
-            <p data-cy="text">
-              {text}
-            </p>
-          </div>
+          <p data-cy="text">
+            {text}
+          </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
