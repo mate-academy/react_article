@@ -9,26 +9,20 @@ export const Article = ({ title = '', date = '', text = '' }) => {
   });
 
   return (
-    <div className="section">
-      <div className="container">
-        <h1 className="title is-2">React Article</h1>
+    <div className="box">
+      <h2 className="title" data-cy="title">
+        {title}
+      </h2>
 
-        <div className="box">
-          <h2 className="title" data-cy="title">
-            {title}
-          </h2>
+      <p className="subtitle">
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleString}
+        </time>
+      </p>
 
-          <p className="subtitle">
-            <time dateTime={dateISO} data-cy="date">
-              {dateLocaleString}
-            </time>
-          </p>
-
-          <p data-cy="text">
-            {text}
-          </p>
-        </div>
-      </div>
+      <p data-cy="text">
+        {text}
+      </p>
     </div>
   );
 };
