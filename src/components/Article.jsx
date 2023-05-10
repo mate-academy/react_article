@@ -7,13 +7,17 @@ export const Article = ({ title, date, text }) => (
     </h2>
 
     <p className="subtitle">
-      <time dateTime={date.toISOString().slice(0, 10)} data-cy="date">
-        {date.toLocaleDateString('en-US',
-          {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })
+      <time
+        dateTime={date.toISOString().slice(0, 10)}
+        data-cy="date"
+      >
+        {
+          date.toLocaleDateString('en-US',
+            {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })
         }
       </time>
     </p>
