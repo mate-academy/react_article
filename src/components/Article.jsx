@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Article = (article) => {
+export const Article = ({ article }) => {
   const { title, date, text } = article;
   const today = date;
   const dateISO = today.toISOString().slice(0, 10);
