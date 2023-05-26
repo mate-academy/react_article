@@ -14,7 +14,7 @@ it in the initial code):
     ```
 - `text` should be rendered inside `data-cy="text"`
 
-## Instructions
+## Instruction
 
 - Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
 - Open one more terminal and run tests with `npm test` to ensure your solution is correct.
