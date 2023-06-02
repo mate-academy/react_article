@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export const Article = ({
   title,
   date,
-  text
+  text,
 }) => {
   const dateISO = date.toISOString().slice(0, 10);
   const dateLocaleString = date.toLocaleDateString('en-US', {
