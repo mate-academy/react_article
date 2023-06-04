@@ -12,7 +12,7 @@ export const firstArticle = {
 export const App = () => (
   <div className="section">
     <div className="container">
-      {Article(firstArticle)}
+      <Article article={firstArticle} />
     </div>
   </div>
 );
