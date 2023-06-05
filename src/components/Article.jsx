@@ -5,9 +5,8 @@ export const Article = ({
   date,
   text,
 }) => {
-  const articleDate = date;
-  const dateISO = articleDate.toISOString().slice(0, 10);
-  const dateLocaleString = articleDate.toLocaleDateString('en-US', {
+  const dateISO = date.toISOString().slice(0, 10);
+  const dateLocaleString = date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
