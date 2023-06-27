@@ -21,9 +21,7 @@ export const Article = ({ article }) => {
           {dateLocaleString}
         </time>
       </p>
-      <p data-cy="text">
-        {article.text}
-      </p>
+      <p data-cy="text">{article.text}</p>
     </div>
   );
 };
