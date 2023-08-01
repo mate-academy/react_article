@@ -15,7 +15,7 @@ export const App = () => {
   return (
     <div className="section">
       <div className="container">
-        <h1 className="title is-2">React Article</h1>
+        <h1 className="title is-3">React Article</h1>
         <Article
           title={title}
           date={date}
