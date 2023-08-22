@@ -1,7 +1,9 @@
 import React from 'react';
 
 export const Article = ({ title, date, text }) => {
-  const formattedDate = new Date(date).toLocaleDateString('en-US', {
+  const today = new Date(date);
+  const dateISO = today.toISOString().slice(0, 10);
+  const dateLocaleStrinf = today.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -14,8 +16,8 @@ export const Article = ({ title, date, text }) => {
       </h2>
 
       <p className="subtitle">
-        <time dateTime={date} data-cy="date">
-          {formattedDate}
+        <time dateTime={dateISO} data-cy="date">
+          {dateLocaleStrinf}
         </time>
       </p>
 
