@@ -14,9 +14,23 @@ it in the initial code):
     ```
 - `text` should be rendered inside `data-cy="text"`
 
+Реализуйте компонент «Статья», который принимает «заголовок», «дату» и «текст» в качестве реквизита.
+и визуализировать их, используя данную разметку. «Приложение» должно отображать «Статью» с
+данные из объекта firstArticle.
+
+- `title` это текст для `data-cy="title"`;
+- `дата` должна быть добавлена ​​в следующем формате (у вас есть пример того, как это сделать
+это в исходном коде):
+    ```tsx
+    <время datetime="2022-09-08" data-cy="дата">
+      8 сентября 2022 г.
+    </время>
+    ```
+- `text` должен отображаться внутри `data-cy="text"`
+
 ## Instructions
 
 - Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
 - Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
 - Open one more terminal and run tests with `npm test` to ensure your solution is correct.
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_article/) and add it to the PR description.
+- Replace `<your_account>` with your Github username in the [DEMO LINK](https://yevhenii-stanchenko.github.io/react_article/) and add it to the PR description.
